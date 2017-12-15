@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<title>
+
+  Class Index - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../");
+</script>
+<script src="../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../navtree_data.js" type="text/javascript"></script>
+<script src="../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../')"
+                      onkeyup="return search_changed(event, false, '../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../reference/packages.html"  >Package Index</a> | 
+                <a href="../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="api apilevel-">
+  <a href="../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="api apilevel-">
+  <a href="../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+              <script>
+                /*addLoadEvent(maxPackageHeight);*/
+              </script>
+              <p style="padding:10px">Select a package to view its members</p><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../reference/packages.html"  >Package Index</a> | 
+            <a href="../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="jd-header">
+<h1>Class Index - Amazon Maps v2</h1>
+</div>
+
+<div id="jd-content">
+
+<div class="jd-letterlist">
+    <a href="#letter_A">A</a>
+    <a href="#letter_B">B</a>
+    <a href="#letter_C">C</a>
+    <a href="#letter_E">E</a>
+    <a href="#letter_G">G</a>
+    <a href="#letter_I">I</a>
+    <a href="#letter_L">L</a>
+    <a href="#letter_M">M</a>
+    <a href="#letter_O">O</a>
+    <a href="#letter_P">P</a>
+    <a href="#letter_R">R</a>
+    <a href="#letter_S">S</a>
+    <a href="#letter_T">T</a>
+    <a href="#letter_U">U</a>
+    <a href="#letter_V">V</a>
+</div>
+
+
+
+<h2 id="letter_A">A</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.html">AmazonMap</a></td>
+            <td class="jd-descrcol" width="100%">The main class for interacting with the map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving notifications when a task is cancelled or completed.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a></td>
+            <td class="jd-descrcol" width="100%">Interface for displaying <code><a href="../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> info windows.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnCameraChangeListener.html">AmazonMap.OnCameraChangeListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the map camera changes position.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnIndoorStateChangeListener.html">AmazonMap.OnIndoorStateChangeListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving notifications when indoor maps change state.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnInfoWindowClickListener.html">AmazonMap.OnInfoWindowClickListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when a user clicks the info window
+ for a <code><a href="../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapClickListener.html">AmazonMap.OnMapClickListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the map is clicked.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLoadedCallback.html">AmazonMap.OnMapLoadedCallback</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the map finishes loading.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLongClickListener.html">AmazonMap.OnMapLongClickListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user performs a long click on
+ the map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerClickListener.html">AmazonMap.OnMarkerClickListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user clicks a <code><a href="../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerDragListener.html">AmazonMap.OnMarkerDragListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user drags a marker.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationButtonClickListener.html">AmazonMap.OnMyLocationButtonClickListener</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user clicks the "Locate Me"
+ button.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationChangeListener.html">AmazonMap.OnMyLocationChangeListener</a></td>
+            <td class="jd-descrcol" width="100%">
+      <em>This interface is deprecated. 
+      Use standard Android location APIs instead. See the <a href=
+             "http://developer.android.com/guide/topics/location/strategies.html"
+             >Location Strategies</a> API guide for details.
+</em>&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks from the <code>snapshot()</code> methods.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></td>
+            <td class="jd-descrcol" width="100%">Configuration object used for setting initial map options when creating
+ an <code><a href="../reference/com/amazon/geo/mapsv2/AmazonMap.html">AmazonMap</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html">AmazonMapsRuntimeUtil</a></td>
+            <td class="jd-descrcol" width="100%">Class providing utility methods for the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.html">AmazonMapsStrictMode</a></td>
+            <td class="jd-descrcol" width="100%">Sets a policy of what to do when the AmazonMaps functionality does not match
+ the reference implementation.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.ApiPolicy.html">AmazonMapsStrictMode.ApiPolicy</a></td>
+            <td class="jd-descrcol" width="100%">Sets a policy for when an API is not implemented.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.ApiPolicy.Builder.html">AmazonMapsStrictMode.ApiPolicy.Builder</a></td>
+            <td class="jd-descrcol" width="100%">Builds an ApiPolicy object
+&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.StrictModeException.html">AmazonMapsStrictMode.StrictModeException</a></td>
+            <td class="jd-descrcol" width="100%">Thrown when a strict mode violation occurs and penaltyThrow is chosen.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_B">B</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></td>
+            <td class="jd-descrcol" width="100%">Defines a bitmap that can be used for custom <code><a href="../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> icons.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/BitmapDescriptorFactory.html">BitmapDescriptorFactory</a></td>
+            <td class="jd-descrcol" width="100%">Contains methods for creating <code><a href="../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></code> objects from different
+ sources.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_C">C</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></td>
+            <td class="jd-descrcol" width="100%">Immutable class representing the position of the camera.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/CameraPosition.Builder.html">CameraPosition.Builder</a></td>
+            <td class="jd-descrcol" width="100%">Class for building <code><a href="../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></code> objects.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></td>
+            <td class="jd-descrcol" width="100%">Defines a target for changing the map camera.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/CameraUpdateFactory.html">CameraUpdateFactory</a></td>
+            <td class="jd-descrcol" width="100%">Contains methods for creating <code><a href="../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> objects.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></td>
+            <td class="jd-descrcol" width="100%">A circle overlay that can be displayed on the map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a></td>
+            <td class="jd-descrcol" width="100%">An object for defining the initial options for a <code><a href="../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></code> object.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></td>
+            <td class="jd-descrcol" width="100%">Error code returned from
+ <code><a href="../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#isAmazonMapsRuntimeAvailable(android.content.Context)">isAmazonMapsRuntimeAvailable(android.content.Context)</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_E">E</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/util/ErrorDialogFragment.html">ErrorDialogFragment</a></td>
+            <td class="jd-descrcol" width="100%">Wraps an error dialog in a <code><a href="http://developer.android.com/reference/android/app/Fragment.html">Fragment</a></code> so that its life
+ cycle can be managed by the <code><a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_G">G</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></td>
+            <td class="jd-descrcol" width="100%">Ground overlays are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></td>
+            <td class="jd-descrcol" width="100%">Ground overlays are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_I">I</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/IndoorBuilding.html">IndoorBuilding</a></td>
+            <td class="jd-descrcol" width="100%">Indoor building maps are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/IndoorLevel.html">IndoorLevel</a></td>
+            <td class="jd-descrcol" width="100%">Indoor building maps are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_L">L</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></td>
+            <td class="jd-descrcol" width="100%">Immutable class representing a geographic point on the map represented by a
+ latitude/longitude pair, in degrees.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></td>
+            <td class="jd-descrcol" width="100%">Immutable class representing a rectangle defined by <code><a href="../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> objects at
+ its northeast and southwest points.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/LatLngBounds.Builder.html">LatLngBounds.Builder</a></td>
+            <td class="jd-descrcol" width="100%">Class for building <code><a href="../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></code> objects.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/LocationSource.html">LocationSource</a></td>
+            <td class="jd-descrcol" width="100%">Interface for replacing the map's built in location provider.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/LocationSource.OnLocationChangedListener.html">LocationSource.OnLocationChangedListener</a></td>
+            <td class="jd-descrcol" width="100%">An interface for receiving callbacks when the user's location
+ changes.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_M">M</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/MapFragment.html">MapFragment</a></td>
+            <td class="jd-descrcol" width="100%">Represents a <code><a href="http://developer.android.com/reference/android/app/Fragment.html">Fragment</a></code> for displaying a map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/MapsInitializer.html">MapsInitializer</a></td>
+            <td class="jd-descrcol" width="100%">Contains methods for manually initializing the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/MapView.html">MapView</a></td>
+            <td class="jd-descrcol" width="100%">Represents a <code><a href="http://developer.android.com/reference/android/view/View.html">View</a></code> for displaying a map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></td>
+            <td class="jd-descrcol" width="100%">An icon overlay that can be displayed at a specific geographic location on
+ the map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></td>
+            <td class="jd-descrcol" width="100%">An object for defining the initial options for a <code><a href="../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> object.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_O">O</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/OnMapReadyCallback.html">OnMapReadyCallback</a></td>
+            <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the map is ready to be used.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/OnStreetViewPanoramaReadyCallback.html">OnStreetViewPanoramaReadyCallback</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_P">P</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></td>
+            <td class="jd-descrcol" width="100%">A polygon overlay that can be drawn on the map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></td>
+            <td class="jd-descrcol" width="100%">An object for defining the initial options for a <code><a href="../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></code> object.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></td>
+            <td class="jd-descrcol" width="100%">A line overlay that can be drawn on the map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a></td>
+            <td class="jd-descrcol" width="100%">An object for defining the initial options for a <code><a href="../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></code> object.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a></td>
+            <td class="jd-descrcol" width="100%">An object used to translate between screen pixels (not display pixels) and geographic
+ locations on the map (latitude / longitude).&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_R">R</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/RuntimeRemoteException.html">RuntimeRemoteException</a></td>
+            <td class="jd-descrcol" width="100%">Thrown when an unrecoverable error occurs.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_S">S</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/StreetViewPanorama.html">StreetViewPanorama</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaChangeListener</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaClickListener.html">StreetViewPanorama.OnStreetViewPanoramaClickListener</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.html">StreetViewPanoramaCamera</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.Builder.html">StreetViewPanoramaCamera.Builder</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/StreetViewPanoramaFragment.html">StreetViewPanoramaFragment</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLink.html">StreetViewPanoramaLink</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLocation.html">StreetViewPanoramaLocation</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/StreetViewPanoramaOptions.html">StreetViewPanoramaOptions</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.html">StreetViewPanoramaOrientation</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.Builder.html">StreetViewPanoramaOrientation.Builder</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/StreetViewPanoramaView.html">StreetViewPanoramaView</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/SupportMapFragment.html">SupportMapFragment</a></td>
+            <td class="jd-descrcol" width="100%">Represents a <code>Fragment</code> for displaying a map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/SupportStreetViewPanoramaFragment.html">SupportStreetViewPanoramaFragment</a></td>
+            <td class="jd-descrcol" width="100%">Street views are not currently supported in the Amazon Maps API.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_T">T</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/Tile.html">Tile</a></td>
+            <td class="jd-descrcol" width="100%">Represents a tile returned by a <code><a href="../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></td>
+            <td class="jd-descrcol" width="100%">Represents a set of images placed on top of the normal base map tiles.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></td>
+            <td class="jd-descrcol" width="100%">An object for defining the initial options for a <code><a href="../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> object.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></td>
+            <td class="jd-descrcol" width="100%">Interface for providing tile images for a <code><a href="../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_U">U</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a></td>
+            <td class="jd-descrcol" width="100%">Contains the user interface settings for the map.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/UrlTileProvider.html">UrlTileProvider</a></td>
+            <td class="jd-descrcol" width="100%">An implementation of <code><a href="../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></code> that returns URLs to tiles, all of
+ which must be the same size, for the map engine to download and cache as
+ needed.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_V">V</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-" >
+            <td class="jd-linkcol"><a href="../reference/com/amazon/geo/mapsv2/model/VisibleRegion.html">VisibleRegion</a></td>
+            <td class="jd-descrcol" width="100%">Object representing the four sided polygon currently visible in the map.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div><!-- end jd-content -->
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

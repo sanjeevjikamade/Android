@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AmazonInterstitialMoPubAdapterSampleApp</string>
+    <string name="ad_unit">b53e064943254d05bee466f3458cf1f5</string>
+    <string name="sample_desc">This is a simple app for testing interstitial ad loading capabilities of the Amazon Mobile Ads MoPub Adapter. The active/inactive states of the above buttons indicate which actions are allowed at the current point in the ad\'s lifecycle.</string>
+</resources>

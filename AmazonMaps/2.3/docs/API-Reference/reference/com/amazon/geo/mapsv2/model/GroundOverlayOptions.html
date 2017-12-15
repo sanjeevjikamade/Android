@@ -1,0 +1,2253 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  GroundOverlayOptions - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptorFactory.html">BitmapDescriptorFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.Builder.html">CameraPosition.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorBuilding.html">IndoorBuilding</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorLevel.html">IndoorLevel</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.Builder.html">LatLngBounds.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.html">StreetViewPanoramaCamera</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.Builder.html">StreetViewPanoramaCamera.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLink.html">StreetViewPanoramaLink</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLocation.html">StreetViewPanoramaLocation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.html">StreetViewPanoramaOrientation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.Builder.html">StreetViewPanoramaOrientation.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Tile.html">Tile</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/UrlTileProvider.html">UrlTileProvider</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/VisibleRegion.html">VisibleRegion</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/RuntimeRemoteException.html">RuntimeRemoteException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+  <a href="#constants">Constants</a>
+  
+
+
+
+
+
+  &#124; <a href="#pubctors">Constructors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">GroundOverlayOptions</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.geo.mapsv2.model.GroundOverlayOptions</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p></p>
+<p></p>
+<p itemprop="articleBody">Ground overlays are not currently supported in the Amazon Maps API.
+ <p>
+ Class for defining options for a new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></code>.
+ </p>
+</p>
+
+
+
+
+
+  
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">float</td>
+        <td class="jd-linkcol"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#NO_DIMENSION">NO_DIMENSION</a></td>
+        <td class="jd-descrcol" width="100%">For the height when it is calculated via the width and the aspect ratio
+ of the image.</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#GroundOverlayOptions()">GroundOverlayOptions</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Empty constructor for creating ground overlay options with all default
+ values.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#anchor(float, float)">anchor</a></span>(float u, float v)</nobr>
+        
+        <div class="jd-descrdiv">Coordinates used to anchor the image at the specified position.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#bearing(float)">bearing</a></span>(float bearing)</nobr>
+        
+        <div class="jd-descrdiv">Sets the bearing of this ground overlay to the specified degrees clockwise
+ from north about the anchor point normalized to [0.0, 360.0).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#describeContents()">describeContents</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getAnchorU()">getAnchorU</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the horizontal position of the current anchor for this ground
+ overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getAnchorV()">getAnchorV</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the vertical position of the current anchor for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getBearing()">getBearing</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the bearing for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getBounds()">getBounds</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></code> for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getHeight()">getHeight</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the height for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getImage()">getImage</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the image for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getLocation()">getLocation</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the location for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getTransparency()">getTransparency</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the transparency for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getWidth()">getWidth</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the width for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#getZIndex()">getZIndex</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the zIndex for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#image(com.amazon.geo.mapsv2.model.BitmapDescriptor)">image</a></span>(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a> image)</nobr>
+        
+        <div class="jd-descrdiv">Sets the image for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#isVisible()">isVisible</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the visibility of this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#position(com.amazon.geo.mapsv2.model.LatLng, float, float)">position</a></span>(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a> location, float width, float height)</nobr>
+        
+        <div class="jd-descrdiv">Sets the position of this ground overlay with an anchor at a specific
+ geographic location and a set width and height in meters.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#position(com.amazon.geo.mapsv2.model.LatLng, float)">position</a></span>(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a> location, float width)</nobr>
+        
+        <div class="jd-descrdiv">Sets the position of this ground overlay with an anchor at a specific
+ geographic location and a set width in meters.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#positionFromBounds(com.amazon.geo.mapsv2.model.LatLngBounds)">positionFromBounds</a></span>(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a> bounds)</nobr>
+        
+        <div class="jd-descrdiv">Specifies the bounding box (@link LatLngBounds) that encompasses the
+ image.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#transparency(float)">transparency</a></span>(float transparency)</nobr>
+        
+        <div class="jd-descrdiv">Sets the transparency for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#visible(boolean)">visible</a></span>(boolean visible)</nobr>
+        
+        <div class="jd-descrdiv">Sets the visibility for this ground overlay.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#writeToParcel(android.os.Parcel, int)">writeToParcel</a></span>(<a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> out, int flags)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#zIndex(float)">zIndex</a></span>(float zIndex)</nobr>
+        
+        <div class="jd-descrdiv">Sets the zIndex for the ground overlay.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="NO_DIMENSION"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        float
+      </span>
+        NO_DIMENSION
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>For the height when it is calculated via the width and the aspect ratio
+ of the image.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -1.0
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="GroundOverlayOptions()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">GroundOverlayOptions</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Empty constructor for creating ground overlay options with all default
+ values. Set either a position with a width (plus optional height) or the
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#positionFromBounds(com.amazon.geo.mapsv2.model.LatLngBounds)">positionFromBounds(LatLngBounds)</a></code> before using.
+</p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="anchor(float, float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">anchor</span>
+      <span class="normal">(float u, float v)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Coordinates used to anchor the image at the specified position. u and
+ v are in the range [0.0, 1.0] where (0, 0) is the top left corner of the
+ image and (1, 1) is the bottom right corner of the image.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>u</th>
+          <td>The horizontal position to anchor the image in the range [0.0,
+            1.0].</td>
+        </tr>
+        <tr>
+          <th>v</th>
+          <td>The vertical position to anchor the image in the range [0.0,
+            1.0].</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="bearing(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">bearing</span>
+      <span class="normal">(float bearing)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the bearing of this ground overlay to the specified degrees clockwise
+ from north about the anchor point normalized to [0.0, 360.0). The default
+ is straight north (bearing = 0.0). If this bearing transform is applied
+ to a ground overlay via <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#positionFromBounds(com.amazon.geo.mapsv2.model.LatLngBounds)">positionFromBounds(LatLngBounds)</a></code>, the bounds will
+ be applied first and then the rotation.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>bearing</th>
+          <td>The bearing in degrees [0.0, 360.0).</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="describeContents()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">describeContents</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getAnchorU()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getAnchorU</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the horizontal position of the current anchor for this ground
+ overlay. This is a value in the range of [0.0, 1.0].</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The horizontal value of the anchor.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getAnchorV()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getAnchorV</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the vertical position of the current anchor for this ground overlay.
+ This is a value in the range of [0.0, 1.0].</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The vertical value of the anchor.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getBearing()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getBearing</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the bearing for this ground overlay. This is a value in the range of
+ [0.0, 360.0).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The bearing.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getBounds()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a>
+      </span>
+      <span class="sympad">getBounds</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></code> for this ground overlay. This is <code>null</code> if the
+ ground overlay was set via
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#position(com.amazon.geo.mapsv2.model.LatLng, float)">position(LatLng, float)</a></code> or
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#position(com.amazon.geo.mapsv2.model.LatLng, float, float)">position(LatLng, float, float)</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The LatLngBounds of this ground overlay.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getHeight()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getHeight</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the height for this ground overlay.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The height.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getImage()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a>
+      </span>
+      <span class="sympad">getImage</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the image for this ground overlay.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The image.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getLocation()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>
+      </span>
+      <span class="sympad">getLocation</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the location for this ground overlay. This is <code>null</code> if the
+ position was via
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#positionFromBounds(com.amazon.geo.mapsv2.model.LatLngBounds)">positionFromBounds(LatLngBounds)</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> at which the anchor will be set.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getTransparency()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getTransparency</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the transparency for this ground overlay. The default is fully
+ opaque, or 0.0.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The transparency in the range [0.0, 1.0].
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getWidth()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getWidth</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the width for this ground overlay.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The width.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getZIndex()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getZIndex</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the zIndex for this ground overlay. This defines in what order the
+ objects are drawn on the screen. See
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html#setZIndex(float)">setZIndex(float)</a></code> for more details.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The zIndex.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="image(com.amazon.geo.mapsv2.model.BitmapDescriptor)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">image</span>
+      <span class="normal">(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a> image)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the image for this ground overlay.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>image</th>
+          <td>The image to be displayed.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isVisible()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isVisible</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the visibility of this ground overlay.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if this ground overlay will start off visible.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="position(com.amazon.geo.mapsv2.model.LatLng, float, float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">position</span>
+      <span class="normal">(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a> location, float width, float height)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the position of this ground overlay with an anchor at a specific
+ geographic location and a set width and height in meters. The image is
+ stretched to fit the exact width and height specified. Aspect ratio is
+ not preserved.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>location</th>
+          <td>The location on the map to anchor this ground overlay. To
+            move the anchor within the image instead of the map, use
+            <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#anchor(float, float)">anchor(float, float)</a></code>.</td>
+        </tr>
+        <tr>
+          <th>width</th>
+          <td>The width of the overlay in meters.</td>
+        </tr>
+        <tr>
+          <th>height</th>
+          <td>The height of the overlay in meters.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if width or height are negative.</td>
+        </tr>  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></td>
+            <td>if
+             <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#positionFromBounds(com.amazon.geo.mapsv2.model.LatLngBounds)">positionFromBounds(LatLngBounds)</a></code>
+             was already called on this object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="position(com.amazon.geo.mapsv2.model.LatLng, float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">position</span>
+      <span class="normal">(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a> location, float width)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the position of this ground overlay with an anchor at a specific
+ geographic location and a set width in meters. The height is
+ automatically calculated to preserve the aspect ratio of the image.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>location</th>
+          <td>The location on the map to anchor this ground overlay. To
+            move the anchor within the image instead of the map, use
+            <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#anchor(float, float)">anchor(float, float)</a></code>.</td>
+        </tr>
+        <tr>
+          <th>width</th>
+          <td>The width of the overlay in meters.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if width is negative.</td>
+        </tr>  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></td>
+            <td>if
+             <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#positionFromBounds(com.amazon.geo.mapsv2.model.LatLngBounds)">positionFromBounds(LatLngBounds)</a></code>
+             was already called on this object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="positionFromBounds(com.amazon.geo.mapsv2.model.LatLngBounds)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">positionFromBounds</span>
+      <span class="normal">(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a> bounds)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Specifies the bounding box (@link LatLngBounds) that encompasses the
+ image. The image is stretched to fit the <code>LatLngBounds</code> as well as
+ possible, so the aspect ratio on the image is not preserved. If a bearing
+ is set, the image is placed within the bounds first and then rotated.
+ This may cause the image to exceed the original bounds specified.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>bounds</th>
+          <td>The bounds in which to place the ground overlay</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="transparency(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">transparency</span>
+      <span class="normal">(float transparency)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the transparency for this ground overlay. The default is fully
+ opaque (0.0). This is a value in the range [0.0, 1.0] where 0 is opaque
+ and 1 is transparent. Even if the ground overlay is completely
+ transparent, <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html#isVisible()">isVisible()</a></code> still returns
+ <code>true</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>transparency</th>
+          <td>The transparency of the image for this ground
+            overlay.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if the transparency is not in the range
+             [0.0, 1.0].
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="visible(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">visible</span>
+      <span class="normal">(boolean visible)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the visibility for this ground overlay. The default is <code>true</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>visible</th>
+          <td><code>true</code> to make the ground overlay visible, or
+            <code>false</code> to make it hidden.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="writeToParcel(android.os.Parcel, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">writeToParcel</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> out, int flags)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="zIndex(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a>
+      </span>
+      <span class="sympad">zIndex</span>
+      <span class="normal">(float zIndex)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the zIndex for the ground overlay. See
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html#setZIndex(float)">setZIndex(float)</a></code> for more details.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>zIndex</th>
+          <td>The new zIndex. Note that this can be a non-integer value.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>GroundOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_width">46dp</dimen>
+    <dimen name="icon_height">46dp</dimen>
+    <dimen name="icon_margin">4dp</dimen>
+    <dimen name="icon_padding">6dp</dimen>
+    <dimen name="node_name_padding">2dp</dimen>
+    <dimen name="node_name_text_size">18sp</dimen>
+    <dimen name="node_row_height">68dp</dimen>
+    <dimen name="download_dialog_padding">20dp</dimen>
+</resources>

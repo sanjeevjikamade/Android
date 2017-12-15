@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SampleIAPSubscriptionsApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="buy_magazine">Buy Magazine Subscription</string>
+    <string name="subscription_disabled">Subscription Disabled</string>
+    <string name="subscription_enabled">Subscription Enabled</string>
+            
+</resources>

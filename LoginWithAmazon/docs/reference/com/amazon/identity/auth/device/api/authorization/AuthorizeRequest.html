@@ -1,0 +1,2333 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../../../favicon.ico" />
+<title>
+
+  AuthorizeRequest |
+
+Doclava
+
+</title>
+<link href="../../../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../../../");
+</script>
+<script src="../../../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/package-summary.html">com.amazon.identity.auth.device</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/package-summary.html">com.amazon.identity.auth.device.api</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/package-summary.html">com.amazon.identity.auth.device.api.authorization</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/workflow/package-summary.html">com.amazon.identity.auth.device.api.workflow</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/authorization/api/package-summary.html">com.amazon.identity.auth.device.authorization.api</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/package-summary.html">com.amazon.identity.auth.device.interactive</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/shared/package-summary.html">com.amazon.identity.auth.device.shared</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/workflow/package-summary.html">com.amazon.identity.auth.device.workflow</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthCancellation.html">AuthCancellation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html">AuthorizationManager</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html">AuthorizeRequest</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.Builder.html">AuthorizeRequest.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeResult.html">AuthorizeResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/ProfileScope.html">ProfileScope</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/ScopeFactory.html">ScopeFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/User.html">User</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthCancellation.Cause.html">AuthCancellation.Cause</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html">AuthorizeRequest.GrantType</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+  <a href="#nestedclasses">Nested Classes</a>
+  
+
+
+
+
+
+
+
+
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">AuthorizeRequest</h1>
+
+
+
+  
+  
+  
+
+  
+    extends <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html">InteractiveRequest</a>&lt;T&nbsp;extends&nbsp;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveListener.html">InteractiveListener</a>&lt;S,&nbsp;U,&nbsp;V&gt;,&nbsp;S,&nbsp;U,&nbsp;V&gt;<br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html">com.amazon.identity.auth.device.interactive.InteractiveRequest</a>&lt;T&nbsp;extends&nbsp;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveListener.html">com.amazon.identity.auth.device.interactive.InteractiveListener</a>&lt;S,&nbsp;U,&nbsp;V&gt;,&nbsp;S,&nbsp;U,&nbsp;V&gt;</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.identity.auth.device.api.authorization.AuthorizeRequest</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">Encapsulates the options for a call to <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#authorize(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest)">authorize(AuthorizeRequest)</a></code>. The corresponding
+ listener for this request is <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a></code>. See <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.Builder.html">AuthorizeRequest.Builder</a></code> for creating
+ authorization requests.
+ <p>
+ By default, authorize requests:
+ <ul>
+ <li><b>Do not request any scopes.</b> In order to authorize, you must configure the request with scopes.</li>
+ <li><b>Return access tokens.</b> See <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setGrantType(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest.GrantType)">setGrantType(GrantType)</a></code> to change the type of authorization result.</li>
+ <li><b>Will retrieve profile data.</b> If you do not want user profile data to be fetched upon authorization,
+  assign <code>false</code> to <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setShouldReturnUserData(boolean)">setShouldReturnUserData(boolean)</a></code>. User profile data can be later retrieved
+  with <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/User.html#fetch(android.content.Context, com.amazon.identity.auth.device.api.Listener<com.amazon.identity.auth.device.api.authorization.User, com.amazon.identity.auth.device.AuthError>)">fetch(Context, Listener)</a></code>.</li>
+ </ul>{@since 3.0
+}</p>
+
+
+
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.Builder.html">AuthorizeRequest.Builder</a></code></li><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a></code></li>
+      </ul>
+  </div>
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        class</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.Builder.html">AuthorizeRequest.Builder</a></td>
+      <td class="jd-descrcol" width="100%">Instances of <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html">AuthorizeRequest</a></code> must be constructed using this <code>Builder</code>.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        enum</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html">AuthorizeRequest.GrantType</a></td>
+      <td class="jd-descrcol" width="100%">The different kinds of authorization grants that can be requested from Login With Amazon.&nbsp;</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#addScope(com.amazon.identity.auth.device.api.authorization.Scope)">addScope</a></span>(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a> scope)</nobr>
+        
+        <div class="jd-descrdiv">Request a scope in addition to the current set of scopes.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#addScopes(com.amazon.identity.auth.device.api.authorization.Scope...)">addScopes</a></span>(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope...</a> scopesToAdd)</nobr>
+        
+        <div class="jd-descrdiv">Request multiple scopes in addition to the current set of scopes.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#getCodeChallenge()">getCodeChallenge</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">For authorization code flow.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#getCodeChallengeMethod()">getCodeChallengeMethod</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">For authorization code flow.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html">AuthorizeRequest.GrantType</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#getGrantType()">getGrantType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">By default, this is <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html#ACCESS_TOKEN">ACCESS_TOKEN</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#getListenerClass()">getListenerClass</a></span>()</nobr>
+        
+        <div class="jd-descrdiv"><b>Do not call this API, it is for internal SDK usage only.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/android/os/Bundle.html">Bundle</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#getRequestExtras()">getRequestExtras</a></span>()</nobr>
+        
+        <div class="jd-descrdiv"><b>Do not call this API, it is for internal SDK usage only.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#getRequestType()">getRequestType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv"><b>Do not call this API, it is for internal SDK usage only.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#getScopes()">getScopes</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">The current set of scopes being requested.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setCodeChallenge(java.lang.String)">setCodeChallenge</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallenge)</nobr>
+        
+        <div class="jd-descrdiv">Modifies the OAuth 2.0 proof key code challenge.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setCodeChallengeMethod(java.lang.String)">setCodeChallengeMethod</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallengeMethod)</nobr>
+        
+        <div class="jd-descrdiv">Modifies the OAuth 2.0 proof key code challenge method.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setGrantType(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest.GrantType)">setGrantType</a></span>(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html">AuthorizeRequest.GrantType</a> grantType)</nobr>
+        
+        <div class="jd-descrdiv">Change the kind of result received upon authorization completion.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setProofKeyParameters(java.lang.String, java.lang.String)">setProofKeyParameters</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallenge, <a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallengeMethod)</nobr>
+        
+        <div class="jd-descrdiv">Configure an authorization code request with a proof key for proof of possession, per RFC 7636.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setScopes(java.util.List<com.amazon.identity.auth.device.api.authorization.Scope>)">setScopes</a></span>(<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a>&gt; scopes)</nobr>
+        
+        <div class="jd-descrdiv">Replace the current set of scopes for this request with a new one.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#setShouldReturnUserData(boolean)">setShouldReturnUserData</a></span>(boolean shouldReturnUserData)</nobr>
+        
+        <div class="jd-descrdiv">Upon authorization, the default behavior is to fetch and return user profile data in the
+ <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html#onSuccess(com.amazon.identity.auth.device.api.authorization.AuthorizeResult)">onSuccess(AuthorizeResult)</a></code> via <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeResult.html#getUser()">getUser()</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html#shouldReturnUserData()">shouldReturnUserData</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Indicates whether or not user profile data should be fetched upon authorization.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveRequest" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveRequest-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html">com.amazon.identity.auth.device.interactive.InteractiveRequest</a>
+
+<div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveRequest">
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveRequest-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveRequest-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#assertListenerPresent()">assertListenerPresent</a></span>()</nobr>
+        
+        <div class="jd-descrdiv"><b>This method only intended for use by Login With Amazon-enabled SDKs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/android/content/Context.html">Context</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#getContext()">getContext</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Each interactive request must be made from some Android Context.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;T&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#getListenerClass()">getListenerClass</a></span>()</nobr>
+        
+        <div class="jd-descrdiv"><b>This method only intended for use by Login With Amazon-enabled SDKs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/workflow/RequestContext.html">RequestContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#getRequestContext()">getRequestContext</a></span>()</nobr>
+        
+        <div class="jd-descrdiv"><b>This API is intended only for use by Login With Amazon-enabled SDKs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/android/os/Bundle.html">Bundle</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#getRequestExtras()">getRequestExtras</a></span>()</nobr>
+        
+        <div class="jd-descrdiv"><b>This method only intended for use by Login With Amazon-enabled SDKs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#onCancel(U)">onCancel</a></span>(U cancellation)</nobr>
+        
+        <div class="jd-descrdiv"><b>This method only intended for use by Login With Amazon-enabled SDKs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#onError(V)">onError</a></span>(V error)</nobr>
+        
+        <div class="jd-descrdiv"><b>This method only intended for use by Login With Amazon-enabled SDKs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#onRequestCancel(android.content.Context, com.amazon.identity.auth.device.interactive.InteractiveRequestRecord, com.amazon.identity.auth.device.workflow.WorkflowCancellation)">onRequestCancel</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequestRecord.html">InteractiveRequestRecord</a> request, WorkflowCancellation cancellation)</nobr>
+        
+        <div class="jd-descrdiv"><b>Do not call this API, it is used internally by the SDK and may be subject to change without notice.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#onRequestCompletion(android.content.Context, com.amazon.identity.auth.device.interactive.InteractiveRequestRecord, android.net.Uri)">onRequestCompletion</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequestRecord.html">InteractiveRequestRecord</a> request, <a href="http://developer.android.com/reference/android/net/Uri.html">Uri</a> uri)</nobr>
+        
+        <div class="jd-descrdiv"><b>Do not call this API, it is used internally by the SDK and may be subject to change without notice.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#onRequestError(android.content.Context, com.amazon.identity.auth.device.interactive.InteractiveRequestRecord, java.lang.Exception)">onRequestError</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequestRecord.html">InteractiveRequestRecord</a> request, <a href="http://developer.android.com/reference/java/lang/Exception.html">Exception</a> e)</nobr>
+        
+        <div class="jd-descrdiv"><b>Do not call this API, it is used internally by the SDK and may be subject to change without notice.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#onSuccess(S)">onSuccess</a></span>(S result)</nobr>
+        
+        <div class="jd-descrdiv"><b>This method only intended for use by Login With Amazon-enabled SDKs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequest.html#setRequestContext(com.amazon.identity.auth.device.api.workflow.RequestContext)">setRequestContext</a></span>(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/workflow/RequestContext.html">RequestContext</a> requestContext)</nobr>
+        
+        <div class="jd-descrdiv"><b>Do not call this API, it is used internally by the SDK.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amazon.identity.auth.device.api.CancellableListener" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amazon.identity.auth.device.api.CancellableListener-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/CancellableListener.html">com.amazon.identity.auth.device.api.CancellableListener</a>
+
+<div id="inherited-methods-com.amazon.identity.auth.device.api.CancellableListener">
+  <div id="inherited-methods-com.amazon.identity.auth.device.api.CancellableListener-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amazon.identity.auth.device.api.CancellableListener-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/CancellableListener.html#onCancel(U)">onCancel</a></span>(U cancellation)</nobr>
+        
+        <div class="jd-descrdiv">The API operation was cancelled.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/CancellableListener.html#onError(V)">onError</a></span>(V e)</nobr>
+        
+        <div class="jd-descrdiv">There was an error during the API execution.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/CancellableListener.html#onSuccess(T)">onSuccess</a></span>(T response)</nobr>
+        
+        <div class="jd-descrdiv">The API executed successfully.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amazon.identity.auth.device.api.Listener" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amazon.identity.auth.device.api.Listener-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html">com.amazon.identity.auth.device.api.Listener</a>
+
+<div id="inherited-methods-com.amazon.identity.auth.device.api.Listener">
+  <div id="inherited-methods-com.amazon.identity.auth.device.api.Listener-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amazon.identity.auth.device.api.Listener-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html#onError(U)">onError</a></span>(U e)</nobr>
+        
+        <div class="jd-descrdiv">There was an error during the API execution.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html#onSuccess(T)">onSuccess</a></span>(T response)</nobr>
+        
+        <div class="jd-descrdiv">The API executed successfully.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveAPI" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveAPI-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveAPI.html">com.amazon.identity.auth.device.interactive.InteractiveAPI</a>
+
+<div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveAPI">
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveAPI-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveAPI-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveAPI.html#getRequestType()">getRequestType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Interactive APIs are bound together by a request type.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveListener" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveListener-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveListener.html">com.amazon.identity.auth.device.interactive.InteractiveListener</a>
+
+<div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveListener">
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveListener-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InteractiveListener-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveListener.html#onCancel(U)">onCancel</a></span>(U cancellation)</nobr>
+        
+        <div class="jd-descrdiv">The interactive request for this listener was cancelled.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveListener.html#onError(V)">onError</a></span>(V e)</nobr>
+        
+        <div class="jd-descrdiv">The interactive request for this listener failed.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveListener.html#onSuccess(T)">onSuccess</a></span>(T result)</nobr>
+        
+        <div class="jd-descrdiv">The interactive request for this listener completed successfully.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.amazon.identity.auth.device.interactive.InternalInteractiveListener" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.amazon.identity.auth.device.interactive.InternalInteractiveListener-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  com.amazon.identity.auth.device.interactive.InternalInteractiveListener
+
+<div id="inherited-methods-com.amazon.identity.auth.device.interactive.InternalInteractiveListener">
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InternalInteractiveListener-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.amazon.identity.auth.device.interactive.InternalInteractiveListener-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">onRequestCancel</span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequestRecord.html">InteractiveRequestRecord</a> arg1, WorkflowCancellation arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">onRequestCompletion</span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequestRecord.html">InteractiveRequestRecord</a> arg1, <a href="http://developer.android.com/reference/android/net/Uri.html">Uri</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">onRequestError</span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/InteractiveRequestRecord.html">InteractiveRequestRecord</a> arg1, <a href="http://developer.android.com/reference/java/lang/Exception.html">Exception</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="addScope(com.amazon.identity.auth.device.api.authorization.Scope)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">addScope</span>
+      <span class="normal">(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a> scope)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Request a scope in addition to the current set of scopes.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>scope</th>
+          <td>The given scope to request for.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addScopes(com.amazon.identity.auth.device.api.authorization.Scope...)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">addScopes</span>
+      <span class="normal">(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope...</a> scopesToAdd)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Request multiple scopes in addition to the current set of scopes.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>scopesToAdd</th>
+          <td>The given scopes to request for.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getCodeChallenge()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getCodeChallenge</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>For authorization code flow. The proof key.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The OAuth 2.0 proof key code challenge, or null if there is none.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getCodeChallengeMethod()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getCodeChallengeMethod</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>For authorization code flow. The proof key's derivation method.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The current code challenge method, or null if there is none.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getGrantType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html">AuthorizeRequest.GrantType</a>
+      </span>
+      <span class="sympad">getGrantType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>By default, this is <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html#ACCESS_TOKEN">ACCESS_TOKEN</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The current type of authorization grant requested.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getListenerClass()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a>&gt;
+      </span>
+      <span class="sympad">getListenerClass</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p><b>Do not call this API, it is for internal SDK usage only.</b>
+</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The Class of the listener type T.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRequestExtras()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="http://developer.android.com/reference/android/os/Bundle.html">Bundle</a>
+      </span>
+      <span class="sympad">getRequestExtras</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p><b>Do not call this API, it is for internal SDK usage only.</b>
+</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A bundle containing your request's extra data to be passed back upon request completion, or null if
+  no extras are to be passed.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRequestType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getRequestType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p><b>Do not call this API, it is for internal SDK usage only.</b>
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getScopes()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a>&gt;
+      </span>
+      <span class="sympad">getScopes</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>The current set of scopes being requested.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The set of scopes being requested, or an empty collection.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setCodeChallenge(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setCodeChallenge</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallenge)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Modifies the OAuth 2.0 proof key code challenge.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>codeChallenge</th>
+          <td>The new code challenge to use.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setCodeChallengeMethod(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setCodeChallengeMethod</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallengeMethod)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Modifies the OAuth 2.0 proof key code challenge method.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>codeChallengeMethod</th>
+          <td>The new code challenge method to use.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setGrantType(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest.GrantType)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setGrantType</span>
+      <span class="normal">(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html">AuthorizeRequest.GrantType</a> grantType)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Change the kind of result received upon authorization completion.
+ By default, this is <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html#ACCESS_TOKEN">ACCESS_TOKEN</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>grantType</th>
+          <td>The kind of authorization grant to request.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setProofKeyParameters(java.lang.String, java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setProofKeyParameters</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallenge, <a href="http://developer.android.com/reference/java/lang/String.html">String</a> codeChallengeMethod)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Configure an authorization code request with a proof key for proof of possession, per RFC 7636.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>codeChallenge</th>
+          <td>The OAuth 2.0 code challenged derived using the given <code>codeChallengeMethod</code>.</td>
+        </tr>
+        <tr>
+          <th>codeChallengeMethod</th>
+          <td>The method used to derive the <code>codeChallenge</code>, such as "S256".
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setScopes(java.util.List<com.amazon.identity.auth.device.api.authorization.Scope>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setScopes</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a>&gt; scopes)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Replace the current set of scopes for this request with a new one.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>scopes</th>
+          <td>The new set of scopes to be requested.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setShouldReturnUserData(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setShouldReturnUserData</span>
+      <span class="normal">(boolean shouldReturnUserData)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Upon authorization, the default behavior is to fetch and return user profile data in the
+ <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html#onSuccess(com.amazon.identity.auth.device.api.authorization.AuthorizeResult)">onSuccess(AuthorizeResult)</a></code> via <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeResult.html#getUser()">getUser()</a></code>. If this is set to
+ <code>false</code> then user profile data is not returned, and the authorize request will finish without
+ incurring the cost of retrieving user profile data.
+ <p>
+ It may be desired to override the default behavior using this method in cases where user profile data is not
+ desired, if no scopes for profile data are being requested, or if it is preferable to defer fetching of user
+ profile data.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>shouldReturnUserData</th>
+          <td>true to fetch return user data, false otherwise.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/User.html#fetch(android.content.Context, com.amazon.identity.auth.device.api.Listener<com.amazon.identity.auth.device.api.authorization.User, com.amazon.identity.auth.device.AuthError>)">fetch(Context, Listener)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="shouldReturnUserData()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">shouldReturnUserData</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Indicates whether or not user profile data should be fetched upon authorization.
+ By default, this is <code>true</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if user profile data is going to be returned, false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

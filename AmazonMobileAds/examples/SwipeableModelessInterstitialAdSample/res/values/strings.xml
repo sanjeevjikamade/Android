@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Swipeable Modeless Interstitial Ad Sample</string>
+    <string name="description">
+        This is a simple app for testing modeless interstitial ad loading capabilities of the Amazon Mobile Ads API. 
+    </string>
+
+</resources>

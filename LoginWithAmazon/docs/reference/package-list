@@ -1,0 +1,9 @@
+com.amazon.identity.auth.device
+com.amazon.identity.auth.device.api
+com.amazon.identity.auth.device.api.authorization
+com.amazon.identity.auth.device.api.workflow
+com.amazon.identity.auth.device.authorization.api
+com.amazon.identity.auth.device.interactive
+com.amazon.identity.auth.device.shared
+com.amazon.identity.auth.device.workflow
+

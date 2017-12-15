@@ -1,0 +1,2477 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
+<title>
+
+  AmazonMapOptions - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../");
+</script>
+<script src="../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="selected api apilevel-">
+  <a href="../../../../../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnCameraChangeListener.html">AmazonMap.OnCameraChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnIndoorStateChangeListener.html">AmazonMap.OnIndoorStateChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnInfoWindowClickListener.html">AmazonMap.OnInfoWindowClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapClickListener.html">AmazonMap.OnMapClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLoadedCallback.html">AmazonMap.OnMapLoadedCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLongClickListener.html">AmazonMap.OnMapLongClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerClickListener.html">AmazonMap.OnMarkerClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerDragListener.html">AmazonMap.OnMarkerDragListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationButtonClickListener.html">AmazonMap.OnMyLocationButtonClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationChangeListener.html">AmazonMap.OnMyLocationChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.html">LocationSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.OnLocationChangedListener.html">LocationSource.OnLocationChangedListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/OnMapReadyCallback.html">OnMapReadyCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/OnStreetViewPanoramaReadyCallback.html">OnStreetViewPanoramaReadyCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaClickListener.html">StreetViewPanorama.OnStreetViewPanoramaClickListener</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html">AmazonMap</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.html">AmazonMapsStrictMode</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.ApiPolicy.html">AmazonMapsStrictMode.ApiPolicy</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.ApiPolicy.Builder.html">AmazonMapsStrictMode.ApiPolicy.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdateFactory.html">CameraUpdateFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/MapFragment.html">MapFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/MapsInitializer.html">MapsInitializer</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/MapView.html">MapView</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.html">StreetViewPanorama</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanoramaFragment.html">StreetViewPanoramaFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanoramaOptions.html">StreetViewPanoramaOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanoramaView.html">StreetViewPanoramaView</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/SupportMapFragment.html">SupportMapFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/SupportStreetViewPanoramaFragment.html">SupportStreetViewPanoramaFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.StrictModeException.html">AmazonMapsStrictMode.StrictModeException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+  <a href="#pubctors">Constructors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">AmazonMapOptions</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.geo.mapsv2.AmazonMapOptions</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p></p>
+<p></p>
+<p itemprop="articleBody">Configuration object used for setting initial map options when creating
+ an <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html">AmazonMap</a></code>. You can use this object to set options in two different ways:
+ <ul>
+ <li>When creating the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapFragment.html">MapFragment</a></code>, <code><a href="../../../../../reference/com/amazon/geo/mapsv2/SupportMapFragment.html">SupportMapFragment</a></code>, or
+     <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapView.html">MapView</a></code> in XML, use XML attributes in the layout for the
+     <code>MapFragment</code>, <code>SupportMapFragment</code> or <code>MapView</code>.
+ <li>When instantiating the <code>MapFragment</code>, <code>SupportMapFragment</code> or
+     <code>MapView</code> in code, create a <code>AmazonMapOptions</code> object, set
+     the options you want, then pass it to the
+     <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapView.html#MapView(android.content.Context, com.amazon.geo.mapsv2.AmazonMapOptions)">MapView(Context, AmazonMapOptions)</a></code>,
+     <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapFragment.html#newInstance(com.amazon.geo.mapsv2.AmazonMapOptions)">newInstance(AmazonMapOptions)</a></code>, or
+     <code><a href="../../../../../reference/com/amazon/geo/mapsv2/SupportMapFragment.html#newInstance(com.amazon.geo.mapsv2.AmazonMapOptions)">newInstance(AmazonMapOptions)</a></code> methods.
+ </ul>
+ <p>
+ When using XML attributes, include the XML namespace
+ <code>xmlns:map="http://schemas.android.com/apk/res-auto"</code> in the XML
+ file. Note that the prefix for the namespace does not have to be "map,"
+ but you must use the same prefix for each attribute.
+ </p>
+ <p>The available XML attributes are documented with the corresponding
+ <code>AmazonMapOptions</code> setter methods.
+ </p>
+</p>
+
+
+
+
+
+  
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#AmazonMapOptions()">AmazonMapOptions</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Creates a new, empty <code>AmazonMapOptions</code> object.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#camera(com.amazon.geo.mapsv2.model.CameraPosition)">camera</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a> camera)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial camera position.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#compassEnabled(boolean)">compassEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setCompassEnabled(boolean)">setCompassEnabled(boolean)</a></code> option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#createFromAttributes(android.content.Context, android.util.AttributeSet)">createFromAttributes</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://developer.android.com/reference/android/util/AttributeSet.html">AttributeSet</a> attrs)</nobr>
+        
+        <div class="jd-descrdiv">Creates an <code>AmazonMapOptions</code> object from layout attributes.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#describeContents()">describeContents</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getCamera()">getCamera</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></code>, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getCompassEnabled()">getCompassEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>compassEnabled</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getLiteMode()">getLiteMode</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>liteMode</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getMapToolbarEnabled()">getMapToolbarEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>uiMapToolbar</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getMapType()">getMapType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>mapType</code> option, or -1 if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getRotateGesturesEnabled()">getRotateGesturesEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>rotateGesturesEnabled</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getScrollGesturesEnabled()">getScrollGesturesEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>scrollGesturesEnabled</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getTiltGesturesEnabled()">getTiltGesturesEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>tiltGesturesEnabled</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getUseViewLifecycleInFragment()">getUseViewLifecycleInFragment</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>useViewLifecycleInFragment</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getZOrderOnTop()">getZOrderOnTop</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>zOrderOnTop</code> option, or null if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getZoomControlsEnabled()">getZoomControlsEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>zoomControlsEnabled</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#getZoomGesturesEnabled()">getZoomGesturesEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the specified <code>zoomGesturesEnabled</code> option, or <code>null</code> if unspecified.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#liteMode(boolean)">liteMode</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial lite mode option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#mapToolbarEnabled(boolean)">mapToolbarEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setMapToolbarEnabled(boolean)">setMapToolbarEnabled(boolean)</a></code> option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#mapType(int)">mapType</a></span>(int mapType)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setMapType(int)">setMapType(int)</a></code> option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#rotateGesturesEnabled(boolean)">rotateGesturesEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setRotateGesturesEnabled(boolean)">setRotateGesturesEnabled(boolean)</a></code>
+ option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#scrollGesturesEnabled(boolean)">scrollGesturesEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setScrollGesturesEnabled(boolean)">setScrollGesturesEnabled(boolean)</a></code>
+ option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#tiltGesturesEnabled(boolean)">tiltGesturesEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setTiltGesturesEnabled(boolean)">setTiltGesturesEnabled(boolean)</a></code>
+ option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#useViewLifecycleInFragment(boolean)">useViewLifecycleInFragment</a></span>(boolean useViewLifecycleInFragment)</nobr>
+        
+        <div class="jd-descrdiv">Specifies whether the lifecycle of the map should be tied to the
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapFragment.html">MapFragment</a></code>'s enclosing <code>View</code> or the <code>MapFragment</code>
+ itself.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#writeToParcel(android.os.Parcel, int)">writeToParcel</a></span>(<a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> out, int flags)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#zOrderOnTop(boolean)">zOrderOnTop</a></span>(boolean zOrderOnTop)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code>zOrderOnTop</code> setting.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#zoomControlsEnabled(boolean)">zoomControlsEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setZoomControlsEnabled(boolean)">setZoomControlsEnabled(boolean)</a></code>
+ option.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html#zoomGesturesEnabled(boolean)">zoomGesturesEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setZoomGesturesEnabled(boolean)">setZoomGesturesEnabled(boolean)</a></code>
+ option.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="AmazonMapOptions()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">AmazonMapOptions</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new, empty <code>AmazonMapOptions</code> object.
+</p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="camera(com.amazon.geo.mapsv2.model.CameraPosition)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">camera</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a> camera)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial camera position. Use this to set the initial camera bearing,
+ target location (in latitude/longitude), tilt, and zoom.
+ <p>
+ To set the initial camera position in XML, use these attributes:
+ <ul>
+ <li><code>map:amzn_cameraBearing</code>
+ <li><code>map:amzn_cameraTargetLat</code>
+ <li><code>map:amzn_cameraTargetLng</code>
+ <li><code>map:amzn_cameraTilt</code>
+ <li><code>map:amzn_cameraZoom</code>
+ </ul>
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>camera</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></code> object specifying the initial
+              camera settings.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="compassEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">compassEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setCompassEnabled(boolean)">setCompassEnabled(boolean)</a></code> option.
+ Default is <code>true</code>.
+ <p>
+ When the compass is enabled, the map displays a compass icon whenever the
+ map camera is rotated away from normal (tilt = 0 and bearing = 0).
+ Clicking the compass icon re-orients the map to normal
+ and causes the icon to disappear.
+ </p>
+
+ <p>To set this option in XML, use the attribute <code>map:amzn_uiCompass</code>.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable the compass UI option, or
+                <code>false</code> to disable it.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="createFromAttributes(android.content.Context, android.util.AttributeSet)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">createFromAttributes</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://developer.android.com/reference/android/util/AttributeSet.html">AttributeSet</a> attrs)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Creates an <code>AmazonMapOptions</code> object from layout attributes.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>The context for the attributes.</td>
+        </tr>
+        <tr>
+          <th>attrs</th>
+          <td>The attributes.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The new <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="describeContents()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">describeContents</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getCamera()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a>
+      </span>
+      <span class="sympad">getCamera</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></code>, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getCompassEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getCompassEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>compassEnabled</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getLiteMode()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getLiteMode</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>liteMode</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getMapToolbarEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getMapToolbarEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>uiMapToolbar</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getMapType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMapType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>mapType</code> option, or -1 if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getRotateGesturesEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getRotateGesturesEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>rotateGesturesEnabled</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getScrollGesturesEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getScrollGesturesEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>scrollGesturesEnabled</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getTiltGesturesEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getTiltGesturesEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>tiltGesturesEnabled</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getUseViewLifecycleInFragment()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getUseViewLifecycleInFragment</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>useViewLifecycleInFragment</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getZOrderOnTop()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getZOrderOnTop</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>zOrderOnTop</code> option, or null if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getZoomControlsEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getZoomControlsEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>zoomControlsEnabled</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getZoomGesturesEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/Boolean.html">Boolean</a>
+      </span>
+      <span class="sympad">getZoomGesturesEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the specified <code>zoomGesturesEnabled</code> option, or <code>null</code> if unspecified.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="liteMode(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">liteMode</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial lite mode option. Default is <code>false</code>. Note that
+ lite mode is not currently supported in the Amazon Maps API, so this
+ method does nothing.
+ <p>
+ To set this option in XML, use the attribute <code>map:amzn_liteMode</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td>Lite mode is not supported, so setting this does nothing.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="mapToolbarEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">mapToolbarEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setMapToolbarEnabled(boolean)">setMapToolbarEnabled(boolean)</a></code> option.
+ Default is <code>true</code>.
+
+ <p>To set this option in XML, use the attribute
+ <code>map:amzn_uiMapToolbar</code>.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable the map toolbar, or <code>false</code>
+              to disable the toolbar.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="mapType(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">mapType</span>
+      <span class="normal">(int mapType)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setMapType(int)">setMapType(int)</a></code> option. Default is normal.
+
+ <p>To set this option in XML, use the attribute <code>map:amzn_mapType</code>.
+ The possible XML values are:</p>
+ <ul>
+ <li><code>amzn_none</code>
+ <li><code>amzn_normal</code>
+ <li><code>amzn_satellite</code>
+ <li><code>amzn_terrain</code>
+ <li><code>amzn_hybrid</code>
+ </ul>
+ <p>To set this option in code, use the supported values:</p>
+ <ul>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_NONE">MAP_TYPE_NONE</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_NORMAL">MAP_TYPE_NORMAL</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_SATELLITE">MAP_TYPE_SATELLITE</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_TERRAIN">MAP_TYPE_TERRAIN</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_HYBRID">MAP_TYPE_HYBRID</a></code></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mapType</th>
+          <td>The map type to initially display.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="rotateGesturesEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">rotateGesturesEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setRotateGesturesEnabled(boolean)">setRotateGesturesEnabled(boolean)</a></code>
+ option. Default is <code>true</code>.
+
+ <p>To set this option in XML, use the attribute
+ <code>map:amzn_uiRotateGestures</code>.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable rotate gestures, or <code>false</code>
+              to disable them.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="scrollGesturesEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">scrollGesturesEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setScrollGesturesEnabled(boolean)">setScrollGesturesEnabled(boolean)</a></code>
+ option. Default is <code>true</code>.
+
+ <p>To set this option in XML, use the attribute
+ <code>map:amzn_uiScrollGestures</code>.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable scroll gestures, or <code>false</code>
+              to disable them.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="tiltGesturesEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">tiltGesturesEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setTiltGesturesEnabled(boolean)">setTiltGesturesEnabled(boolean)</a></code>
+ option. Default is <code>true</code>.
+
+ <p>To set this option in XML, use the attribute
+ <code>map:amzn_uiTiltGestures</code>.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable tilt gestures, or <code>false</code>
+              to disable them.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="useViewLifecycleInFragment(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">useViewLifecycleInFragment</span>
+      <span class="normal">(boolean useViewLifecycleInFragment)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Specifies whether the lifecycle of the map should be tied to the
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapFragment.html">MapFragment</a></code>'s enclosing <code>View</code> or the <code>MapFragment</code>
+ itself. Set to <code>true</code> to tie the lifecycle to the <code>View</code> or
+ <code>false</code> to tie the lifecycle to the <code>MapFragment</code>.
+ The default is <code>false</code>.
+
+ <p>When set to <code>false</code>, the GL context is reused. This leads to better
+ attach performance, but more memory usage while detached.
+ Otherwise, a new GL context is created, leading to improved detached
+ memory usage at the cost of attach performance.</p>
+
+ <p>When the lifecycle is tied to the view and the fragment is detached,
+ all <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html">AmazonMap</a></code> methods throw a <code>NullPointerException</code>.</p>
+
+ <p>To set this option in XML for a <code>MapFragment</code> or
+ <code>SupportMapFragment</code>, use the attribute
+ <code>map:amzn_useViewLifecycle</code>.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>useViewLifecycleInFragment</th>
+          <td><code>true</code> to tie the lifecycle of the map
+                to the <code>View</code>, or <code>false</code> to tie the lifecycle of
+                the map to the <code>MapFragment</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="writeToParcel(android.os.Parcel, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">writeToParcel</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> out, int flags)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="zOrderOnTop(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">zOrderOnTop</span>
+      <span class="normal">(boolean zOrderOnTop)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code>zOrderOnTop</code> setting. Default
+ is <code>false</code>. Setting this to <code>true</code> places the map
+ on top of the window.
+
+ <p>To set this in the XML, use the attribute
+ <code>map:amzn_zOrderOnTop</code>.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>zOrderOnTop</th>
+          <td><code>true</code> to enable enable the zOrderOnTop option,
+          or <code>false</code> to disable it.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="zoomControlsEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">zoomControlsEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setZoomControlsEnabled(boolean)">setZoomControlsEnabled(boolean)</a></code>
+ option. Default is <code>false</code>.
+
+ <p>To set this option in XML, use the attribute
+ <code>map:amzn_uiZoomControls</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable zoom controls, or <code>false</code>
+              to disable them.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="zoomGesturesEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a>
+      </span>
+      <span class="sympad">zoomGesturesEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the initial <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setZoomGesturesEnabled(boolean)">setZoomGesturesEnabled(boolean)</a></code>
+ option. Default is {code true}.
+
+ <p>To set this option in XML, use the attribute
+ <code>map:amzn_uiZoomGestures</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable zoom gestures, or <code>false</code>
+              to disable them.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>AmazonMapOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

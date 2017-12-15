@@ -1,0 +1,1411 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  TileOverlayOptions - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptorFactory.html">BitmapDescriptorFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.Builder.html">CameraPosition.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorBuilding.html">IndoorBuilding</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorLevel.html">IndoorLevel</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.Builder.html">LatLngBounds.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.html">StreetViewPanoramaCamera</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.Builder.html">StreetViewPanoramaCamera.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLink.html">StreetViewPanoramaLink</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLocation.html">StreetViewPanoramaLocation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.html">StreetViewPanoramaOrientation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.Builder.html">StreetViewPanoramaOrientation.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Tile.html">Tile</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/UrlTileProvider.html">UrlTileProvider</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/VisibleRegion.html">VisibleRegion</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/RuntimeRemoteException.html">RuntimeRemoteException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+  <a href="#pubctors">Constructors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">TileOverlayOptions</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.geo.mapsv2.model.TileOverlayOptions</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p></p>
+<p></p>
+<p itemprop="articleBody">An object for defining the initial options for a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> object.
+ Use this to define all the properties of a <code>TileOverlay</code> before calling
+ the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addTileOverlay(com.amazon.geo.mapsv2.model.TileOverlayOptions)">addTileOverlay(TileOverlayOptions)</a></code> method to add the
+ <code>TileOverlay</code> to the map.
+ <p>
+ Modifying <code>TileOverlayOptions</code> after the <code>TileOverlay</code> has been
+ added to the map has no effect on the appearance of the <code>TileOverlay</code>.
+ </p>
+ Note that <code>TileOverlayOptions</code> methods do not need to be called on the main
+ thread. </p>
+</p>
+
+
+
+
+
+  
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#TileOverlayOptions()">TileOverlayOptions</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Creates a new <code>TileOverlayOptions</code> object with default values.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#describeContents()">describeContents</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#fadeIn(boolean)">fadeIn</a></span>(boolean fadeIn)</nobr>
+        
+        <div class="jd-descrdiv">Sets whether tiles for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> should fade in or
+ display instantly with no fade effect.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#getFadeIn()">getFadeIn</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value indicating whether the tiles for the new
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> should fade in.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#getTileProvider()">getTileProvider</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></code> to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#getZIndex()">getZIndex</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the z-index to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#isVisible()">isVisible</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value indicating whether the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>
+ is visible or hidden.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#tileProvider(com.amazon.geo.mapsv2.model.TileProvider)">tileProvider</a></span>(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a> tileProvider)</nobr>
+        
+        <div class="jd-descrdiv">Sets the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></code> to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#visible(boolean)">visible</a></span>(boolean visible)</nobr>
+        
+        <div class="jd-descrdiv">Sets the visibility to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#writeToParcel(android.os.Parcel, int)">writeToParcel</a></span>(<a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> out, int flags)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#zIndex(float)">zIndex</a></span>(float zIndex)</nobr>
+        
+        <div class="jd-descrdiv">Sets the z-index to use for the new the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="TileOverlayOptions()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">TileOverlayOptions</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new <code>TileOverlayOptions</code> object with default values.
+</p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="describeContents()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">describeContents</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="fadeIn(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a>
+      </span>
+      <span class="sympad">fadeIn</span>
+      <span class="normal">(boolean fadeIn)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets whether tiles for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> should fade in or
+ display instantly with no fade effect.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fadeIn</th>
+          <td><code>true</code> to fade in the tiles, or <code>false</code> to
+            display the tiles instantly with no fade effect.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>TileOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFadeIn()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">getFadeIn</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value indicating whether the tiles for the new
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> should fade in.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> to fade in the tiles, or <code>false</code> to display
+         the tiles instantly with no fade effect.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getTileProvider()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a>
+      </span>
+      <span class="sympad">getTileProvider</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></code> to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.
+ This is the provider set with <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#tileProvider(com.amazon.geo.mapsv2.model.TileProvider)">tileProvider(TileProvider)</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code>TileProvider</code> set for the new <code>TileOverlay</code>
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getZIndex()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getZIndex</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the z-index to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>. See
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html#zIndex(float)">zIndex(float)</a></code> for more information about the z-index.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The tile overlay's z-index.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isVisible()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isVisible</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value indicating whether the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>
+ is visible or hidden.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the <code>TileOverlay</code> is visible, or
+         <code>false</code> if it is invisible.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="tileProvider(com.amazon.geo.mapsv2.model.TileProvider)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a>
+      </span>
+      <span class="sympad">tileProvider</span>
+      <span class="normal">(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a> tileProvider)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></code> to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>tileProvider</th>
+          <td>The <code>TileProvider</code> to use for this tile
+            overlay.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>TileOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="visible(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a>
+      </span>
+      <span class="sympad">visible</span>
+      <span class="normal">(boolean visible)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the visibility to use for the new <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>. The default
+ value is <code>true</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>visible</th>
+          <td><code>true</code> to make the <code>TileOverlay</code> visible, or
+            <code>false</code> to make it invisible.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>TileOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="writeToParcel(android.os.Parcel, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">writeToParcel</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/os/Parcel.html">Parcel</a> out, int flags)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="zIndex(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a>
+      </span>
+      <span class="sympad">zIndex</span>
+      <span class="normal">(float zIndex)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the z-index to use for the new the <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>. Z-index
+ determines the order in which overlays are drawn. Overlays with higher
+ indices are drawn over overlays with lower indices. Overlays with the
+ same z-index are drawn in an arbitrary order.
+ <p>
+ Overlays that are affected by z-index include <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></code>,
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>, <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></code>, <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></code>, and
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></code>.
+ </p>
+ <p>
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> overlays are not affected by the z-index of other
+ overlays.
+ </p>
+ <p>
+ The default value is zero.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>zIndex</th>
+          <td>The z-index for the new <code>TileOverlay</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>TileOverlayOptions</code> object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1299 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../../../favicon.ico" />
+<title>
+
+  AuthorizationManager |
+
+Doclava
+
+</title>
+<link href="../../../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../../../");
+</script>
+<script src="../../../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/package-summary.html">com.amazon.identity.auth.device</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/package-summary.html">com.amazon.identity.auth.device.api</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/package-summary.html">com.amazon.identity.auth.device.api.authorization</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/workflow/package-summary.html">com.amazon.identity.auth.device.api.workflow</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/authorization/api/package-summary.html">com.amazon.identity.auth.device.authorization.api</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/interactive/package-summary.html">com.amazon.identity.auth.device.interactive</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/shared/package-summary.html">com.amazon.identity.auth.device.shared</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../reference/com/amazon/identity/auth/device/workflow/package-summary.html">com.amazon.identity.auth.device.workflow</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthCancellation.html">AuthCancellation</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html">AuthorizationManager</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html">AuthorizeRequest</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.Builder.html">AuthorizeRequest.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeResult.html">AuthorizeResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/ProfileScope.html">ProfileScope</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/ScopeFactory.html">ScopeFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/User.html">User</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthCancellation.Cause.html">AuthCancellation.Cause</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.GrantType.html">AuthorizeRequest.GrantType</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+  <a href="#pubctors">Constructors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">AuthorizationManager</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.identity.auth.device.api.authorization.AuthorizationManager</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">Clients of Login With Amazon use this class to authorize Amazon customers and retrieve authorization grants.
+ In order to use any APIs of AuthorizationManager, your application must have configured an APIKey, see below.
+ <p>
+ All methods that return results in an asynchronous manner will do so in a non-UI thread.
+ <p>
+ To retrieve Amazon customer profile data, see the <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/User.html">User</a></code> class.
+ <p>
+ <b>APIKey</b>: <br>
+ The "APIKey" is a token meant to encode claims about a native application(e.g. Android, iOS) that can be used to
+ verify the identity of the application without requiring a remote service call. In addition to the app identity,
+ these tokens can carry other claims about the application as required. For example, a list of permissions granted
+ to the application. The contents of the tokens are encoded and then digitally signed. The APIKey must be available
+ for the SDK to obtain from the calling application.
+ <ul>
+ <li>It can be in the manifest for the application as a meta-data tag with the key "AmazonAPIKey" example:
+  &lt;meta-data android:name="AmazonAPIKey" android:value="@string/my_api_key" /&gt;</li>
+ <li>It can also be placed in a file in the application's asset folder.  The filename must be: "api_key.txt"</li>
+ </ul>{@since 3.0
+}</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#AuthorizationManager()">AuthorizationManager</a></span>()</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#authorize(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest)">authorize</a></span>(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html">AuthorizeRequest</a> request)</nobr>
+        
+        <div class="jd-descrdiv">Performs authorization (using OAuth 2.0) using the given <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html">AuthorizeRequest</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#getRegion(android.content.Context)">getRegion</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        
+        <div class="jd-descrdiv">Gets the region the SDK is using to connect to the server endpoints.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#getToken(android.content.Context, com.amazon.identity.auth.device.api.authorization.Scope[], com.amazon.identity.auth.device.api.Listener<com.amazon.identity.auth.device.api.authorization.AuthorizeResult, com.amazon.identity.auth.device.AuthError>)">getToken</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope[]</a> scopes, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html">Listener</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeResult.html">AuthorizeResult</a>,&nbsp;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.html">AuthError</a>&gt; listener)</nobr>
+        
+        <div class="jd-descrdiv">Requests an authorization token (using OAuth 2.0) for the specified scopes.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#isSandboxMode(android.content.Context)">isSandboxMode</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        
+        <div class="jd-descrdiv">Inspect whether the Login With Amazon SDK is operating with non-production sandbox test customer accounts.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#setRegion(android.content.Context, com.amazon.identity.auth.device.api.authorization.Region)">setRegion</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a> region)</nobr>
+        
+        <div class="jd-descrdiv">Sets the region for the SDK.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#setSandboxMode(android.content.Context, boolean)">setSandboxMode</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, boolean useSandbox)</nobr>
+        
+        <div class="jd-descrdiv">Configure the Login With Amazon SDK to be in sandbox mode.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#signOut(android.content.Context, com.amazon.identity.auth.device.api.Listener<java.lang.Void, com.amazon.identity.auth.device.AuthError>)">signOut</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html">Listener</a>&lt;<a href="http://developer.android.com/reference/java/lang/Void.html">Void</a>,&nbsp;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.html">AuthError</a>&gt; listener)</nobr>
+        
+        <div class="jd-descrdiv">Removes any local authorization for the current user from this application.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="AuthorizationManager()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">AuthorizationManager</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="authorize(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">authorize</span>
+      <span class="normal">(<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html">AuthorizeRequest</a> request)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Performs authorization (using OAuth 2.0) using the given <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.html">AuthorizeRequest</a></code>.
+ <p>
+ By default, a native browser is used to present a page that prompts the user to login and authorize the
+ application. If SSO is available, an Amazon-hosted <code><a href="http://developer.android.com/reference/android/webkit/WebView.html">WebView</a></code> will be used instead of a
+ native browser.
+ <p>
+ To be notified when the authorization flow has finished, register an <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a></code> on the
+ <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/workflow/RequestContext.html">RequestContext</a></code> that the <code>request</code> was created with.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>request</th>
+          <td>Required. The request to perform authorize for.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>If there were no scopes provided in the <code>request</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeRequest.Builder.html">AuthorizeRequest.Builder</a></code></li><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeListener.html">AuthorizeListener</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRegion(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a>
+      </span>
+      <span class="sympad">getRegion</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the region the SDK is using to connect to the server endpoints.
+ If the region was set to <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html#AUTO">Region.AUTO</a></code> then method will return the region SDK translated it into.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>Required.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a></code> the SDK is using.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getToken(android.content.Context, com.amazon.identity.auth.device.api.authorization.Scope[], com.amazon.identity.auth.device.api.Listener<com.amazon.identity.auth.device.api.authorization.AuthorizeResult, com.amazon.identity.auth.device.AuthError>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">getToken</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope[]</a> scopes, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html">Listener</a>&lt;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeResult.html">AuthorizeResult</a>,&nbsp;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.html">AuthError</a>&gt; listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Requests an authorization token (using OAuth 2.0) for the specified scopes.
+ <p>
+ The <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#authorize(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest)">authorize(AuthorizeRequest)</a></code> method must have been called successfully with the same scopes, and the
+ user must have granted consent to those scopes once, prior to this call, in order to get a token.
+ <p>
+ If the app has restarted since the last authorize call, getToken may still succeed using the cached credentials.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>Required.</td>
+        </tr>
+        <tr>
+          <th>scopes</th>
+          <td>An array of <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Scope.html">Scope</a></code> representing the permissions requested by this application.
+  See <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/ProfileScope.html">ProfileScope</a></code> for the scopes declared by Login With Amazon.</td>
+        </tr>
+        <tr>
+          <th>listener</th>
+          <td>Callback that returns an <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizeResult.html">AuthorizeResult</a></code> on success or an <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.html">AuthError</a></code> on failure.
+  <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html#onError(U)">onError(U)</a></code> will be called for the following OAuth-related errors:
+  <ul>
+  <li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_INVALID_TOKEN">ERROR_INVALID_TOKEN</a></code></li>
+  <li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_INVALID_GRANT">ERROR_INVALID_GRANT</a></code></li>
+  <li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_INVALID_CLIENT">ERROR_INVALID_CLIENT</a></code></li>
+  <li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_INVALID_SCOPE">ERROR_INVALID_SCOPE</a></code></li>
+  <li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_UNAUTHORIZED_CLIENT">ERROR_UNAUTHORIZED_CLIENT</a></code></li>
+  </ul>
+  If the APIKey is incorrect, <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_ACCESS_DENIED">ERROR_ACCESS_DENIED</a></code> will be returned.
+  <p>
+  Any other possible OAuth-related errors will be encapsulated in a
+  <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_SERVER_REPSONSE">ERROR_SERVER_REPSONSE</a></code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isSandboxMode(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isSandboxMode</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Inspect whether the Login With Amazon SDK is operating with non-production sandbox test customer accounts.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if using sandbox customer accounts, false if using production customer accounts.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#setSandboxMode(android.content.Context, boolean)">setSandboxMode(Context, boolean)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setRegion(android.content.Context, com.amazon.identity.auth.device.api.authorization.Region)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setRegion</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a> region)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the region for the SDK. This region will determine which server endpoints the SDK hits for various APIs.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>Required.</td>
+        </tr>
+        <tr>
+          <th>region</th>
+          <td>The <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">region</a></code> to set.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/Region.html">Region</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setSandboxMode(android.content.Context, boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setSandboxMode</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, boolean useSandbox)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Configure the Login With Amazon SDK to be in sandbox mode. In sandbox mode, the
+ <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#authorize(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest)">authorize(AuthorizeRequest)</a></code> API will prompt sign in for only non-production sandbox test customer
+ accounts. By default, sandbox mode is disabled.
+ <p>
+ If the value of <code>useSandbox</code> is different than the current sandbox setting, then this API implicitly
+ performs <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#signOut(android.content.Context, com.amazon.identity.auth.device.api.Listener<java.lang.Void, com.amazon.identity.auth.device.AuthError>)">signOut(Context, Listener)</a></code> to clear all local auth state. When this happens, this API will
+ block on the completion of signOut.
+ <p>
+ The sandbox setting is persisted across restarts of the application through Android SharedPreferences.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>Required.</td>
+        </tr>
+        <tr>
+          <th>useSandbox</th>
+          <td>true to enable sandbox mode, false to disable sandbox mode.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#isSandboxMode(android.content.Context)">isSandboxMode(Context)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="signOut(android.content.Context, com.amazon.identity.auth.device.api.Listener<java.lang.Void, com.amazon.identity.auth.device.AuthError>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">signOut</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, <a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html">Listener</a>&lt;<a href="http://developer.android.com/reference/java/lang/Void.html">Void</a>,&nbsp;<a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.html">AuthError</a>&gt; listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Removes any local authorization for the current user from this application. Your application must call
+ <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#authorize(com.amazon.identity.auth.device.api.authorization.AuthorizeRequest)">authorize(AuthorizeRequest)</a></code> again to be able to get tokens (via
+ <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/AuthorizationManager.html#getToken(android.content.Context, com.amazon.identity.auth.device.api.authorization.Scope[], com.amazon.identity.auth.device.api.Listener<com.amazon.identity.auth.device.api.authorization.AuthorizeResult, com.amazon.identity.auth.device.AuthError>)">getToken(Context, Scope[], Listener)</a></code>) or profile data (via <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/authorization/User.html#fetch(android.content.Context, com.amazon.identity.auth.device.api.Listener<com.amazon.identity.auth.device.api.authorization.User, com.amazon.identity.auth.device.AuthError>)">fetch(Context, Listener)</a></code>).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>Required.</td>
+        </tr>
+        <tr>
+          <th>listener</th>
+          <td>Callback that returns an <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.html">AuthError</a></code> upon failure. <code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/api/Listener.html#onError(U)">onError(U)</a></code> will be called
+  for the following errors:
+  <ul>
+  <li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_THREAD">ERROR_THREAD</a></code> if the thread is interrupted.</li>
+  <li><code><a href="../../../../../../../../reference/com/amazon/identity/auth/device/AuthError.ERROR_TYPE.html#ERROR_ACCESS_DENIED">ERROR_ACCESS_DENIED</a></code> if the APIKey is incorrect.</li>
+  </ul>
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

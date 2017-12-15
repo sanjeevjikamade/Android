@@ -1,0 +1,10 @@
+com.amazon.clouddrive
+com.amazon.clouddrive.auth
+com.amazon.clouddrive.configuration
+com.amazon.clouddrive.exceptions
+com.amazon.clouddrive.handlers
+com.amazon.clouddrive.metrics
+com.amazon.clouddrive.model
+com.amazon.clouddrive.model.deserializer
+com.amazon.clouddrive.model.serializer
+com.amazon.clouddrive.utils

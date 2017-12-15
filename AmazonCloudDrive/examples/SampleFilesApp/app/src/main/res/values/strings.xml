@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Amazon Cloud Drive SDK Sample</string>
+    <string name="menu_logout">Log out</string>
+    <string name="login_with_amazon">Login with Amazon</string>
+    <string name="logout">Logout</string>
+    <string name="default_message">Welcome to Login with Amazon!\nIf this is your first time logging in, you will be asked to give permission for this application to access your profile data.</string>
+    <string name="login_button_content_description">"Button for authorization through Login with Amazon"</string>
+    <string name="return_to_app">Return To App</string>
+    <string name="opening">Opening...</string>
+    <string name="no_application_found">No application found to open this file.</string>
+    <string name="upload_to_cloud_drive">Upload to Amazon Cloud Drive</string>
+    <string name="upload_toast_uploading_to_clouddrive">Uploading to Amazon Cloud Drive</string>
+    <string name="upload_notification_complete">Upload complete</string>
+    <string name="upload_notification_title">Uploading %1$s</string>
+    <string name="upload_notification_upload_in_progress">Upload in progress</string>
+</resources>

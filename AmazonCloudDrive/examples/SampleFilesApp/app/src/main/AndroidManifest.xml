@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clouddrivefiles"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.clouddrivefiles.activity.LauncherActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation" > <!-- Prevents authorization dialog from closing when screen orientation is changed -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.clouddrivefiles.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation" > <!-- Prevents authorization dialog from closing when screen orientation is changed -->
+        </activity>
+        <activity
+            android:name="com.example.clouddrivefiles.activity.ContentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.clouddrivefiles.activity.UploadActivity"
+            android:label="@string/upload_to_cloud_drive"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.amazon.identity.auth.device.authorization.AuthorizationActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="com.example.clouddrivefiles"
+                    android:scheme="amzn" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:authorities="com.example.clouddrivefiles"
+            android:name=".provider.CloudDriveProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <service android:name="com.example.clouddrivefiles.service.CloudDriveFolderListingService" />
+        <service android:name="com.example.clouddrivefiles.service.CloudDriveUploadService" />
+
+    </application>
+
+</manifest>

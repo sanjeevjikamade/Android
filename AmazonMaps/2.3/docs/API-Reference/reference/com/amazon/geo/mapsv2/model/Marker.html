@@ -1,0 +1,2418 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  Marker - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptorFactory.html">BitmapDescriptorFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.Builder.html">CameraPosition.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorBuilding.html">IndoorBuilding</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorLevel.html">IndoorLevel</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.Builder.html">LatLngBounds.Builder</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.html">StreetViewPanoramaCamera</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.Builder.html">StreetViewPanoramaCamera.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLink.html">StreetViewPanoramaLink</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLocation.html">StreetViewPanoramaLocation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.html">StreetViewPanoramaOrientation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.Builder.html">StreetViewPanoramaOrientation.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Tile.html">Tile</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/UrlTileProvider.html">UrlTileProvider</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/VisibleRegion.html">VisibleRegion</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/RuntimeRemoteException.html">RuntimeRemoteException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+  <a href="#pubctors">Constructors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">Marker</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.geo.mapsv2.model.Marker</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p></p>
+<p></p>
+<p itemprop="articleBody">An icon overlay that can be displayed at a specific geographic location on
+ the map. A <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> is drawn in relation to the screen rather than the
+ map's surface; rotating, zooming, or tilting the map does not change the
+ orientation or appearance of the icon.
+ <p>
+ Obtain a <code>Marker</code> by creating a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></code> object with the
+ initial marker properties and then passing it to
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addMarker(com.amazon.geo.mapsv2.model.MarkerOptions)">addMarker(MarkerOptions)</a></code>.
+ </p>
+ <p>
+ You can change the properties of the <code>Marker</code> using the setter methods
+ after the <code>Marker</code> is created. Note that all getter and setter methods
+ must be called on the main thread or an <code><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></code> is
+ thrown.
+ </p>
+ <p>
+ A <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> can use a default "pin" icon, a default icon with a custom
+ color, or a custom bitmap in place of the default icon. Set the icon for a
+ marker with <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setIcon(com.amazon.geo.mapsv2.model.BitmapDescriptor)">setIcon(BitmapDescriptor)</a></code> or
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html#icon(com.amazon.geo.mapsv2.model.BitmapDescriptor)">MarkerOptions.icon(BitmapDescriptor)</a></code>.
+ </p>
+ <p>
+ Clicking a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> displays a default info window if the object has a
+ title defined. You can provide a custom window by implementing
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a></code> and assigning it with
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setInfoWindowAdapter(com.amazon.geo.mapsv2.AmazonMap.InfoWindowAdapter)">setInfoWindowAdapter(InfoWindowAdapter)</a></code>.
+ </p>
+ <p>
+ You can change the default marker click behavior by implementing
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerClickListener.html">AmazonMap.OnMarkerClickListener</a></code> and assigning it with
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMarkerClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMarkerClickListener)">setOnMarkerClickListener(AmazonMap.OnMarkerClickListener)</a></code>.
+ </p>
+</p>
+
+
+
+
+
+  
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#Marker(com.amazon.geo.mapsv2.model.internal.IMarkerDelegate)">Marker</a></span>(IMarkerDelegate markerDelegate)</nobr>
+        
+        <div class="jd-descrdiv">Public constructor.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#equals(java.lang.Object)">equals</a></span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> obj)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#getAlpha()">getAlpha</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the alpha (opacity) of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#getId()">getId</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the unique ID for this <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#getPosition()">getPosition</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> representing the geographic position of the
+ <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#getRotation()">getRotation</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the rotation of the <code>Marker</code> in degrees clockwise from the
+ default.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#getSnippet()">getSnippet</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the snippet of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#getTitle()">getTitle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the title of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#hashCode()">hashCode</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#hideInfoWindow()">hideInfoWindow</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Hides this <code>Marker</code>'s info window if it is currently visible.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#isDraggable()">isDraggable</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Draggable markers are not supported in the Amazon Maps API.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#isFlat()">isFlat</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Flat markers are not supported in the Amazon Maps API.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#isInfoWindowShown()">isInfoWindowShown</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value indicating whether the info window for the
+ <code>Marker</code> is currently displayed.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#isVisible()">isVisible</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value indicating whether the <code>Marker</code> is
+ visible or hidden.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#remove()">remove</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Removes this <code>Marker</code> from the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setAlpha(float)">setAlpha</a></span>(float alpha)</nobr>
+        
+        <div class="jd-descrdiv">Sets the alpha (opacity) of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setAnchor(float, float)">setAnchor</a></span>(float anchorU, float anchorV)</nobr>
+        
+        <div class="jd-descrdiv">Sets the anchor point for the <code>Marker</code>'s image on <code>Marker</code>'s
+ position on the surface of the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setDraggable(boolean)">setDraggable</a></span>(boolean draggable)</nobr>
+        
+        <div class="jd-descrdiv">Draggable markers are not supported in the Amazon Maps API.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setFlat(boolean)">setFlat</a></span>(boolean flat)</nobr>
+        
+        <div class="jd-descrdiv">Flat markers are not supported in the Amazon Maps API.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setIcon(com.amazon.geo.mapsv2.model.BitmapDescriptor)">setIcon</a></span>(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a> icon)</nobr>
+        
+        <div class="jd-descrdiv">Sets a custom icon for the <code>Marker</code> as a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setInfoWindowAnchor(float, float)">setInfoWindowAnchor</a></span>(float anchorU, float anchorV)</nobr>
+        
+        <div class="jd-descrdiv">Sets the anchor point for the <code>Marker</code>'s info window on the marker's
+ image.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setPosition(com.amazon.geo.mapsv2.model.LatLng)">setPosition</a></span>(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a> latlng)</nobr>
+        
+        <div class="jd-descrdiv">Sets the geographic position of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setRotation(float)">setRotation</a></span>(float rotation)</nobr>
+        
+        <div class="jd-descrdiv">Sets the rotation of the <code>Marker</code> measured in degrees clockwise
+ from the default position.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setSnippet(java.lang.String)">setSnippet</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> snippet)</nobr>
+        
+        <div class="jd-descrdiv">Sets the snippet text of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setTitle(java.lang.String)">setTitle</a></span>(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> title)</nobr>
+        
+        <div class="jd-descrdiv">Sets the title of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setVisible(boolean)">setVisible</a></span>(boolean visible)</nobr>
+        
+        <div class="jd-descrdiv">Sets the visibility of the <code>Marker</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#showInfoWindow()">showInfoWindow</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Shows this marker's info window if the <code>Marker</code> is visible.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="Marker(com.amazon.geo.mapsv2.model.internal.IMarkerDelegate)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">Marker</span>
+      <span class="normal">(IMarkerDelegate markerDelegate)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Public constructor. Instead of using this constructor, use
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addMarker(com.amazon.geo.mapsv2.model.MarkerOptions)">AmazonMap.addMarker(MarkerOptions)</a></code> to create a <code>Marker</code>.
+</p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="equals(java.lang.Object)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">equals</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> obj)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getAlpha()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getAlpha</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the alpha (opacity) of the <code>Marker</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code>Marker</code>'s alpha.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getId()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getId</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the unique ID for this <code>Marker</code>. The ID is unique for all
+ <code>Marker</code> objects currently added to the map.
+ This method may be called on a background thread.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>Marker</code>'s ID as a <code><a href="http://developer.android.com/reference/java/lang/String.html">String</a></code>.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPosition()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>
+      </span>
+      <span class="sympad">getPosition</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> representing the geographic position of the
+ <code>Marker</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A <code>LatLng</code> representing the position.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRotation()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getRotation</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the rotation of the <code>Marker</code> in degrees clockwise from the
+ default.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The rotation of the marker in degrees clockwise from the default.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getSnippet()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getSnippet</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the snippet of the <code>Marker</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A <code><a href="http://developer.android.com/reference/java/lang/String.html">String</a></code> containing the snippet for the <code>Marker</code>.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getTitle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getTitle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the title of the <code>Marker</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A <code><a href="http://developer.android.com/reference/java/lang/String.html">String</a></code> containing the title for the <code>Marker</code>.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="hashCode()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">hashCode</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="hideInfoWindow()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">hideInfoWindow</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Hides this <code>Marker</code>'s info window if it is currently visible.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="isDraggable()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isDraggable</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Draggable markers are not supported in the Amazon Maps API.
+ <p>
+ Retrieves a boolean value indicating whether the the <code>Marker</code> can
+ be dragged.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the <code>Marker</code> is draggable, <code>false</code>
+         otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isFlat()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isFlat</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Flat markers are not supported in the Amazon Maps API.
+ <p>
+ Retrieves a boolean value indicating whether the <code>Marker</code> is
+ displayed as flat.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the <code>Marker</code> is flat, <code>false</code>
+         otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isInfoWindowShown()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isInfoWindowShown</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value indicating whether the info window for the
+ <code>Marker</code> is currently displayed. Note that this does not consider
+ whether the info window is actually visible on screen or not.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the info window is currently displayed, or
+         <code>false</code> if it is hidden.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isVisible()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isVisible</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value indicating whether the <code>Marker</code> is
+ visible or hidden.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the <code>Marker</code> is visible, or <code>false</code>
+         if it is hidden.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="remove()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">remove</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Removes this <code>Marker</code> from the map. After calling this method,
+ calling other methods on the object has no effect on the appearance of
+ the map.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setAlpha(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setAlpha</span>
+      <span class="normal">(float alpha)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the alpha (opacity) of the <code>Marker</code>. Alpha is a value in the
+ closed range [0, 1]. Use 0 to make the <code>Marker</code> completely
+ transparent, or 1 to make it completely opaque. The default is 1.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>alpha</th>
+          <td>The alpha value.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setAnchor(float, float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setAnchor</span>
+      <span class="normal">(float anchorU, float anchorV)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the anchor point for the <code>Marker</code>'s image on <code>Marker</code>'s
+ position on the surface of the map. The default is the bottom middle of
+ the image (0.5, 1).
+ <p>
+ Anchor coordinates (U, V) are defined in the continuous space [0.0, 1.0]
+ x [0.0, 1.0]. U corresponds to a percentage of an image's width and is
+ measured from the left edge of the image. V corresponds to a percentage
+ of an image's height and is measured from the top edge of the image. So
+ the coordinate (0, 0) is the top left corner of the image and (1, 1) is
+ the bottom right corner of the image.
+ </p>
+ <p>
+ The anchor point of an image with width W pixels and height H pixels is
+ the nearest point in a discrete (W + 1) x (H + 1) grid. This is obtained
+ by first scaling U and V then rounding to the nearest pixel.
+ </p>
+ 
+ <pre>
+ <code>X = round(U * W)
+ Y = round(V * H)
+ </code>
+ </pre>
+ <p>
+ For example, consider two images. The first is 2x4 pixels and the second
+ is 5x5 pixels. Both have anchor coordinates (U, V) of (0.8, 0.3).
+ </p>
+ <p>
+ In the first image, this resolves to (round(0.8 * 2), round(0.3 * 4)) =
+ (2, 1).
+ </p>
+ <p>
+ In the second image, this resolves to (round(0.8 * 5), round(0.3 * 5)) =
+ (4, 2).
+ </p>
+ 
+ <pre>
+ <code>Image 1: (X, Y) = (2, 1)          Image 2: (X, Y) = (4, 2)
+ +---+---+                         +---+---+---+---+---+
+ |   |   |                         |   |   |   |   |   |
+ +---+---X                         +---+---+---+---+---+
+ |   |   |                         |   |   |   |   |   |
+ +---+---+                         +---+---+---+---X---+
+ |   |   |                         |   |   |   |   |   |
+ +---+---+                         +---+---+---+---+---+
+ |   |   |                         |   |   |   |   |   |
+ +---+---+                         +---+---+---+---+---+
+                                   |   |   |   |   |   |
+                                   +---+---+---+---+---+
+ </code>
+ </pre></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>anchorU</th>
+          <td>The U coordinate where the image should be anchored, as a
+            ratio to the image width and measured from the left edge.
+            Should be in the closed range [0, 1].</td>
+        </tr>
+        <tr>
+          <th>anchorV</th>
+          <td>The V coordinate where the image should be anchored, as a
+            ratio to the image height and measured from the top edge.
+            Should be in the closed range [0, 1].
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setDraggable(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setDraggable</span>
+      <span class="normal">(boolean draggable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Draggable markers are not supported in the Amazon Maps API.
+ <p>
+ Sets the draggable option for the <code>Marker</code>. The
+ default is <code>false</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>draggable</th>
+          <td><code>true</code> to enable dragging, <code>false</code> to
+            disable it.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFlat(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFlat</span>
+      <span class="normal">(boolean flat)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Flat markers are not supported in the Amazon Maps API.
+ <p>
+ Sets the flat option for the <code>Marker</code>. This determines whether
+ the <code>Marker</code> is displayed as flat against the map. The default is
+ <code>false</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>flat</th>
+          <td><code>true</code> to make the marker flat, <code>false</code> to
+            display the marker normally.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setIcon(com.amazon.geo.mapsv2.model.BitmapDescriptor)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setIcon</span>
+      <span class="normal">(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a> icon)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a custom icon for the <code>Marker</code> as a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></code>.
+ Use <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptorFactory.html#defaultMarker()">defaultMarker()</a></code> for the default
+ marker.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>icon</th>
+          <td>The icon to use for this marker. Must not be <code>null</code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setInfoWindowAnchor(float, float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setInfoWindowAnchor</span>
+      <span class="normal">(float anchorU, float anchorV)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the anchor point for the <code>Marker</code>'s info window on the marker's
+ image. See <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setAnchor(float, float)">setAnchor(float, float)</a></code> for more information
+ about anchor points. The default is the top middle (0.5, 0).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>anchorU</th>
+          <td>The U coordinate where the info window should be anchored,
+            as a ratio to the image width and measured from the left edge.
+            Should be in the closed range [0, 1].</td>
+        </tr>
+        <tr>
+          <th>anchorV</th>
+          <td>The V coordinate where the info window should be anchored,
+            as a ratio to the image height and measured from the top edge.
+            Should be in the closed range [0, 1].
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPosition(com.amazon.geo.mapsv2.model.LatLng)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPosition</span>
+      <span class="normal">(<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a> latlng)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the geographic position of the <code>Marker</code>. You
+ can change this on an existing <code>Marker</code> to move the icon on the
+ map.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>latlng</th>
+          <td>The position on the map as a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code>. Must not be
+            <code>null</code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setRotation(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setRotation</span>
+      <span class="normal">(float rotation)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the rotation of the <code>Marker</code> measured in degrees clockwise
+ from the default position. The default is zero, pointing straight up.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>rotation</th>
+          <td>The rotation in degrees.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setSnippet(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setSnippet</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> snippet)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the snippet text of the <code>Marker</code>. When using the default info
+ window, the snippet text is displayed in the body of the window beneath
+ the title.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>snippet</th>
+          <td>The snippet text for the <code>Marker</code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTitle(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setTitle</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/String.html">String</a> title)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the title of the <code>Marker</code>. When using the default info window,
+ the title text is displayed as the title of the window.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>title</th>
+          <td>The title text for the <code>Marker</code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setVisible(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setVisible</span>
+      <span class="normal">(boolean visible)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the visibility of the <code>Marker</code>. The default value is <code>true</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>visible</th>
+          <td><code>true</code> to make the <code>Marker</code> visible, or <code>false</code>
+            to make it invisible.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="showInfoWindow()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">showInfoWindow</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Shows this marker's info window if the <code>Marker</code> is visible.
+ <p>
+ Note that the default info window is only shown when the <code>Marker</code>
+ has a title. If the <code>Marker</code> does not have a title, this method
+ does nothing.
+ </p>
+ <p>
+ You can provide a custom window by implementing
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a></code> and assigning it with
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setInfoWindowAdapter(com.amazon.geo.mapsv2.AmazonMap.InfoWindowAdapter)">setInfoWindowAdapter(InfoWindowAdapter)</a></code>.
+ </p>
+</p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

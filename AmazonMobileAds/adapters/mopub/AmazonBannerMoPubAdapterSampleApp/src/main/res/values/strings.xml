@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AmazonBannerMoPubAdapterSampleApp</string>
+    <string name="ad_unit">7f92d23e29224a5ab4f04711eda0cc9c</string>
+    <string name="sample_desc">This is a simple app for testing ad loading capabilities of the Amazon Mobile Ads MoPub Adapter. This app demonstrates ad loading, expanding and collapsing along with device rotation.</string>
+</resources>

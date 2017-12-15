@@ -1,0 +1,2096 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  Polygon - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptor.html">BitmapDescriptor</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/BitmapDescriptorFactory.html">BitmapDescriptorFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.Builder.html">CameraPosition.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorBuilding.html">IndoorBuilding</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/IndoorLevel.html">IndoorLevel</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.html">LatLngBounds</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLngBounds.Builder.html">LatLngBounds.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.html">StreetViewPanoramaCamera</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaCamera.Builder.html">StreetViewPanoramaCamera.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLink.html">StreetViewPanoramaLink</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaLocation.html">StreetViewPanoramaLocation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.html">StreetViewPanoramaOrientation</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/StreetViewPanoramaOrientation.Builder.html">StreetViewPanoramaOrientation.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Tile.html">Tile</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/UrlTileProvider.html">UrlTileProvider</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/VisibleRegion.html">VisibleRegion</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/RuntimeRemoteException.html">RuntimeRemoteException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+  <a href="#pubctors">Constructors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">Polygon</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.geo.mapsv2.model.Polygon</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p></p>
+<p></p>
+<p itemprop="articleBody">A polygon overlay that can be drawn on the map. A <code>Polygon</code> is a list
+ of three or more points with line segments drawn between each consecutive
+ point, and a line segment that closes the shape drawn from the first point to
+ the last point. A valid <code>Polygon</code> is filled in with its fill color. A
+ <code>Polygon</code> can also have holes, which are regions inside the shape that
+ are not filled in.
+ <p>
+ Obtain a <code>Polygon</code> by creating a <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></code> object with the
+ initial properties and then passing it to
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addPolygon(com.amazon.geo.mapsv2.model.PolygonOptions)">addPolygon(PolygonOptions)</a></code>.
+ </p>
+ <p>
+ You can change the properties of the <code>Polygon</code> using the setter methods
+ after the <code>Polygon</code> is created. Note that all getter and setter methods
+ must be called on the main thread or an <code><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></code> is
+ thrown.
+ </p>
+ <p>
+ A valid <code>Polygon</code> must have at least three unique vertices such that
+ none of its line segments overlap. All added holes must also be valid
+ polygons that do not overlap with each other, and all holes must be
+ completely contained within the border of the <code>Polygon</code>. An invalid
+ <code>Polygon</code> is still drawn, but is not filled in with the fill color.
+ </p>
+</p>
+
+
+
+
+
+  
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#Polygon(com.amazon.geo.mapsv2.model.internal.IPolygonDelegate)">Polygon</a></span>(IPolygonDelegate delegate)</nobr>
+        
+        <div class="jd-descrdiv">Public constructor.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#equals(java.lang.Object)">equals</a></span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> obj)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#getFillColor()">getFillColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the fill color of this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt;&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#getHoles()">getHoles</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets a list of the holes that have been added to this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#getId()">getId</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the unique ID for this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#getPoints()">getPoints</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets a list of the geographic points that comprise the vertices of this
+ <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#getStrokeColor()">getStrokeColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the stroke color of this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#getStrokeWidth()">getStrokeWidth</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the stroke width of this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#getZIndex()">getZIndex</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the z-index of this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#hashCode()">hashCode</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#isGeodesic()">isGeodesic</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value indicating whether the <code>Polygon</code> line
+ segments are drawn as geodesic (curved to correspond to the shortest path
+ between two points on the surface of the Earth) or as straight lines.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#isVisible()">isVisible</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value indicating whether the <code>Polygon</code> is
+ visible or hidden.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#remove()">remove</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Removes this <code>Polygon</code> from the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setFillColor(int)">setFillColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the fill color in ARGB format.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setGeodesic(boolean)">setGeodesic</a></span>(boolean geodesic)</nobr>
+        
+        <div class="jd-descrdiv">Sets whether the line segments of this <code>Polygon</code> are drawn geodesic
+ or non-geodesic.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setHoles(java.util.List<? extends java.util.List<com.amazon.geo.mapsv2.model.LatLng>>)">setHoles</a></span>(<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt;&gt; holes)</nobr>
+        
+        <div class="jd-descrdiv">Sets the holes in this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setPoints(java.util.List<com.amazon.geo.mapsv2.model.LatLng>)">setPoints</a></span>(<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt; points)</nobr>
+        
+        <div class="jd-descrdiv">Sets the vertices of this <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setStrokeColor(int)">setStrokeColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the stroke color in ARGB format.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setStrokeWidth(float)">setStrokeWidth</a></span>(float width)</nobr>
+        
+        <div class="jd-descrdiv">Sets the stroke width of this <code>Polygon</code>'s outline in screen pixels.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setVisible(boolean)">setVisible</a></span>(boolean visible)</nobr>
+        
+        <div class="jd-descrdiv">Sets the visibility of the <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setZIndex(float)">setZIndex</a></span>(float zIndex)</nobr>
+        
+        <div class="jd-descrdiv">Sets the z-index of the <code>Polygon</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#toString()">toString</a></span>()</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="Polygon(com.amazon.geo.mapsv2.model.internal.IPolygonDelegate)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">Polygon</span>
+      <span class="normal">(IPolygonDelegate delegate)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Public constructor. Instead of using this constructor, use
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addPolygon(com.amazon.geo.mapsv2.model.PolygonOptions)">AmazonMap.addPolygon(PolygonOptions)</a></code> to create a <code>Polygon</code>.
+</p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="equals(java.lang.Object)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">equals</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> obj)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getFillColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFillColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the fill color of this <code>Polygon</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The fill color of this polygon in ARGB format. See <code><a href="http://developer.android.com/reference/android/graphics/Color.html">Color</a></code>
+         for more details.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getHoles()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt;&gt;
+      </span>
+      <span class="sympad">getHoles</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a list of the holes that have been added to this <code>Polygon</code>.
+ Holes are automatically closed so each hole may not be equal to holes
+ added with <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html#addHole(java.lang.Iterable<com.amazon.geo.mapsv2.model.LatLng>)">addHole(Iterable)</a></code> or
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setHoles(java.util.List<? extends java.util.List<com.amazon.geo.mapsv2.model.LatLng>>)">setHoles(List)</a></code>.
+ <p>
+ The returned list is a copy, so any subsequent changes to the holes are
+ not reflected in this list, and any changes to this list do not change
+ the appearance of the <code>Polygon</code>. To update the holes, use
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setHoles(java.util.List<? extends java.util.List<com.amazon.geo.mapsv2.model.LatLng>>)">setHoles(List)</a></code>.
+ <p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A list of holes in this <code>Polygon</code>. Each hole is represented
+         as a list of <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> objects.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getId()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getId</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the unique ID for this <code>Polygon</code>. The ID is unique for all
+ <code>Polygon</code> objects currently added to the map. This method may be
+ called on a background thread.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>Polygon</code>'s ID as a <code><a href="http://developer.android.com/reference/java/lang/String.html">String</a></code>.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPoints()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt;
+      </span>
+      <span class="sympad">getPoints</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a list of the geographic points that comprise the vertices of this
+ <code>Polygon</code>. Each point in the list is represented by a
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code>. The <code>Polygon</code> is automatically closed, so the
+ returned list may not be equal to the points added with
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></code> or set with <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setPoints(java.util.List<com.amazon.geo.mapsv2.model.LatLng>)">setPoints(List)</a></code>.
+ <p>
+ The returned list is a copy, so any subsequent changes to the vertices of
+ the <code>Polygon</code> are not reflected in this list, and any changes to
+ this list do not change the appearance of the <code>Polygon</code>. To update
+ the points of the <code>Polygon</code>, use <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html#setPoints(java.util.List<com.amazon.geo.mapsv2.model.LatLng>)">setPoints(List)</a></code> .</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A list of <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> objects representing the vertices for
+         this <code>Polygon</code>.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getStrokeColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getStrokeColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the stroke color of this <code>Polygon</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>Polygon</code>'s stroke color in ARGB format. See
+         <code><a href="http://developer.android.com/reference/android/graphics/Color.html">Color</a></code> for more details.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getStrokeWidth()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getStrokeWidth</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the stroke width of this <code>Polygon</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>Polygon</code>'s stroke width in screen pixels.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getZIndex()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">getZIndex</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the z-index of this <code>Polygon</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>This <code>Polygon</code>'s z-index.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="hashCode()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">hashCode</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="isGeodesic()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isGeodesic</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value indicating whether the <code>Polygon</code> line
+ segments are drawn as geodesic (curved to correspond to the shortest path
+ between two points on the surface of the Earth) or as straight lines.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if each segment is drawn geodesic, or <code>false</code>
+         if each segment is drawn as a straight line.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isVisible()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isVisible</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value indicating whether the <code>Polygon</code> is
+ visible or hidden.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if this <code>Polygon</code> is visible, or <code>false</code>
+         if it is hidden.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="remove()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">remove</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Removes this <code>Polygon</code> from the map. After calling this method,
+ calling other methods on the object has no effect on the appearance of
+ the map.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setFillColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFillColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the fill color in ARGB format. Fill color is the color drawn inside
+ the <code>Polygon</code>. Holes are not filled in. To draw no fill, use
+ <code><a href="http://developer.android.com/reference/android/graphics/Color.html#TRANSPARENT">TRANSPARENT</a></code>. The default value is <code>TRANSPARENT</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</th>
+          <td>The color in ARGB format. See <code><a href="http://developer.android.com/reference/android/graphics/Color.html">Color</a></code> for more
+            details.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setGeodesic(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setGeodesic</span>
+      <span class="normal">(boolean geodesic)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets whether the line segments of this <code>Polygon</code> are drawn geodesic
+ or non-geodesic. The default is <code>false</code> to draw straight lines.
+ <p>
+ Geodesic line segments are drawn as a curve that corresponds to the
+ shortest path between two points on the surface of the Earth. The curve
+ is drawn assuming that the Earth is a sphere.
+ <p>
+ Non-geodesic line segments are drawn as straight lines on top of the
+ map's projection.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>geodesic</th>
+          <td><code>true</code> to draw geodesic line segments, or
+            <code>false</code> to draw straight lines on the map.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setHoles(java.util.List<? extends java.util.List<com.amazon.geo.mapsv2.model.LatLng>>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setHoles</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;?&nbsp;extends&nbsp;<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt;&gt; holes)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the holes in this <code>Polygon</code>. The list of holes passed to this
+ method is copied, so modifying the contents of <code>holes</code> after
+ calling this method has no effect. Each hole provided in the list of
+ holes is represented by a list of <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> objects.
+ <p>
+ Holes are automatically closed, so only unique vertices need to be
+ included in the list of <code>LatLng</code> objects. Although manually closing
+ the holes does not make the <code>Polygon</code> invalid, it is unnecessary.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>holes</th>
+          <td>A list of holes. Each hole is represented as a list of
+            <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> objects representing the vertices of the hole.
+            Must not be <code>null</code>. Use an empty list to remove all
+            holes.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPoints(java.util.List<com.amazon.geo.mapsv2.model.LatLng>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPoints</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a>&gt; points)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the vertices of this <code>Polygon</code>. The list of points passed to
+ this method is copied, so modifying the contents of <code>points</code> after
+ calling this method has no effect.
+ <p>
+ The <code>Polygon</code> is automatically closed, so only unique vertices need
+ to be included in the list of <code>LatLng</code> objects. Although manually
+ closing the <code>Polygon</code> does not make it invalid, it is unnecessary.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>points</th>
+          <td>A list of <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> objects that represent the
+            vertices of this <code>Polygon</code>. Must not be <code>null</code> or
+            empty.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setStrokeColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setStrokeColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the stroke color in ARGB format. Stroke color is the color of the
+ <code>Polygon</code>'s outline. To draw no outline, use
+ <code><a href="http://developer.android.com/reference/android/graphics/Color.html#TRANSPARENT">TRANSPARENT</a></code>. The default value is is <code><a href="http://developer.android.com/reference/android/graphics/Color.html#BLACK">BLACK</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</th>
+          <td>The color in ARGB format. See <code><a href="http://developer.android.com/reference/android/graphics/Color.html">Color</a></code> for more
+            details.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setStrokeWidth(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setStrokeWidth</span>
+      <span class="normal">(float width)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the stroke width of this <code>Polygon</code>'s outline in screen pixels.
+ Must be zero or greater. No outline is drawn if stroke width is set to
+ zero. The default value is 10.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>width</th>
+          <td>The stroke width in screen pixels.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if width is less than zero.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setVisible(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setVisible</span>
+      <span class="normal">(boolean visible)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the visibility of the <code>Polygon</code>. If <code>false</code>, the
+ <code>Polygon</code> is hidden, but all state is preserved. The default value
+ is <code>true</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>visible</th>
+          <td><code>true</code> to make this <code>Polygon</code> visible, or
+            <code>false</code> to make it hidden.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setZIndex(float)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setZIndex</span>
+      <span class="normal">(float zIndex)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the z-index of the <code>Polygon</code>. Z-index determines the order in
+ which overlays are drawn. Overlays with higher indices are drawn over
+ overlays with lower indices. Overlays with the same z-index are drawn in
+ an arbitrary order.
+ <p>
+ Overlays that are affected by z-index include <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></code>,
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code>, <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></code>, <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></code>, and
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></code>.
+ </p>
+ <p>
+ <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> overlays are not affected by the z-index of other
+ overlays.
+ </p>
+ <p>
+ The default value is zero.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>zIndex</th>
+          <td>The z-index.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="toString()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">toString</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

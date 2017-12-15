@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Framed Modeless Interstitial Ad Sample</string>
+    <string name="description">
+        This is a simple app for testing modeless interstitial ad loading capabilities in a framed view of the Amazon Mobile Ads API. 
+    </string>
+    <string name="load_button_text">Load Ad</string>
+    <string name="show_button_text">Show Ad</string>
+
+</resources>

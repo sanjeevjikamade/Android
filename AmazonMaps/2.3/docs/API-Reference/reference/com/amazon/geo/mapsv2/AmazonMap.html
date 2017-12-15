@@ -1,0 +1,4140 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
+<title>
+
+  AmazonMap - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../");
+</script>
+<script src="../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="selected api apilevel-">
+  <a href="../../../../../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnCameraChangeListener.html">AmazonMap.OnCameraChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnIndoorStateChangeListener.html">AmazonMap.OnIndoorStateChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnInfoWindowClickListener.html">AmazonMap.OnInfoWindowClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapClickListener.html">AmazonMap.OnMapClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLoadedCallback.html">AmazonMap.OnMapLoadedCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLongClickListener.html">AmazonMap.OnMapLongClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerClickListener.html">AmazonMap.OnMarkerClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerDragListener.html">AmazonMap.OnMarkerDragListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationButtonClickListener.html">AmazonMap.OnMyLocationButtonClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationChangeListener.html">AmazonMap.OnMyLocationChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.html">LocationSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.OnLocationChangedListener.html">LocationSource.OnLocationChangedListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/OnMapReadyCallback.html">OnMapReadyCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/OnStreetViewPanoramaReadyCallback.html">OnStreetViewPanoramaReadyCallback</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.OnStreetViewPanoramaClickListener.html">StreetViewPanorama.OnStreetViewPanoramaClickListener</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="selected api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html">AmazonMap</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapOptions.html">AmazonMapOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.html">AmazonMapsStrictMode</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.ApiPolicy.html">AmazonMapsStrictMode.ApiPolicy</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.ApiPolicy.Builder.html">AmazonMapsStrictMode.ApiPolicy.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdateFactory.html">CameraUpdateFactory</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/MapFragment.html">MapFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/MapsInitializer.html">MapsInitializer</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/MapView.html">MapView</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanorama.html">StreetViewPanorama</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanoramaFragment.html">StreetViewPanoramaFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanoramaOptions.html">StreetViewPanoramaOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/StreetViewPanoramaView.html">StreetViewPanoramaView</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/SupportMapFragment.html">SupportMapFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/SupportStreetViewPanoramaFragment.html">SupportStreetViewPanoramaFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMapsStrictMode.StrictModeException.html">AmazonMapsStrictMode.StrictModeException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+  <a href="#nestedclasses">Nested Classes</a>
+  
+
+
+
+
+
+  &#124; <a href="#constants">Constants</a>
+  
+
+
+
+
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">AmazonMap</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.geo.mapsv2.AmazonMap</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p></p>
+<p></p>
+<p itemprop="articleBody">The main class for interacting with the map. This class cannot be
+ instantiated directly but must be obtained from
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapFragment.html#getMapAsync(com.amazon.geo.mapsv2.OnMapReadyCallback)">MapFragment.getMapAsync()</a></code>,
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/SupportMapFragment.html#getMapAsync(com.amazon.geo.mapsv2.OnMapReadyCallback)">SupportMapFragment.getMapAsync()</a></code>, or
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/MapView.html#getMapAsync(com.amazon.geo.mapsv2.OnMapReadyCallback)">MapView.getMapAsync()</a></code>.
+ <p>
+ All interactions with <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html">AmazonMap</a></code> must be on the main thread. Calling
+ methods off of the main thread results in an <code><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></code>.
+ <p>
+ Indoor maps are not currently supported. Stubs are available to provide API
+ parity.
+</p>
+
+
+
+
+
+  
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving notifications when a task is cancelled or completed.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a></td>
+      <td class="jd-descrcol" width="100%">Interface for displaying <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> info windows.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnCameraChangeListener.html">AmazonMap.OnCameraChangeListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the map camera changes position.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnIndoorStateChangeListener.html">AmazonMap.OnIndoorStateChangeListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving notifications when indoor maps change state.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnInfoWindowClickListener.html">AmazonMap.OnInfoWindowClickListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when a user clicks the info window
+ for a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapClickListener.html">AmazonMap.OnMapClickListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the map is clicked.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLoadedCallback.html">AmazonMap.OnMapLoadedCallback</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the map finishes loading.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLongClickListener.html">AmazonMap.OnMapLongClickListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user performs a long click on
+ the map.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerClickListener.html">AmazonMap.OnMarkerClickListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user clicks a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerDragListener.html">AmazonMap.OnMarkerDragListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user drags a marker.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationButtonClickListener.html">AmazonMap.OnMyLocationButtonClickListener</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks when the user clicks the "Locate Me"
+ button.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationChangeListener.html">AmazonMap.OnMyLocationChangeListener</a></td>
+      <td class="jd-descrcol" width="100%">
+      <em>This interface is deprecated. 
+      Use standard Android location APIs instead. See the <a href=
+             "http://developer.android.com/guide/topics/location/strategies.html"
+             >Location Strategies</a> API guide for details.
+</em>&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a></td>
+      <td class="jd-descrcol" width="100%">Interface for receiving callbacks from the <code>snapshot()</code> methods.&nbsp;</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_HYBRID">MAP_TYPE_HYBRID</a></td>
+        <td class="jd-descrcol" width="100%">Display satellite tiles with labels and translucent road overlays.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_NONE">MAP_TYPE_NONE</a></td>
+        <td class="jd-descrcol" width="100%">Display no map tiles.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_NORMAL">MAP_TYPE_NORMAL</a></td>
+        <td class="jd-descrcol" width="100%">Display base map tiles.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_SATELLITE">MAP_TYPE_SATELLITE</a></td>
+        <td class="jd-descrcol" width="100%">Display satellite tiles with no roads or labels.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_TERRAIN">MAP_TYPE_TERRAIN</a></td>
+        <td class="jd-descrcol" width="100%">Display terrain tiles with labels and white road overlays.</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addCircle(com.amazon.geo.mapsv2.model.CircleOptions)">addCircle</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a> options)</nobr>
+        
+        <div class="jd-descrdiv">Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></code> to the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addGroundOverlay(com.amazon.geo.mapsv2.model.GroundOverlayOptions)">addGroundOverlay</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a> options)</nobr>
+        
+        <div class="jd-descrdiv">This is not yet implemented and will throw an
+ UnsupportedOperationException when called.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addMarker(com.amazon.geo.mapsv2.model.MarkerOptions)">addMarker</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a> options)</nobr>
+        
+        <div class="jd-descrdiv">Adds a marker to the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addPolygon(com.amazon.geo.mapsv2.model.PolygonOptions)">addPolygon</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a> options)</nobr>
+        
+        <div class="jd-descrdiv">Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></code> to the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addPolyline(com.amazon.geo.mapsv2.model.PolylineOptions)">addPolyline</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a> options)</nobr>
+        
+        <div class="jd-descrdiv">Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></code> to the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#addTileOverlay(com.amazon.geo.mapsv2.model.TileOverlayOptions)">addTileOverlay</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a> options)</nobr>
+        
+        <div class="jd-descrdiv">Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> to the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#animateCamera(com.amazon.geo.mapsv2.CameraUpdate, com.amazon.geo.mapsv2.AmazonMap.CancelableCallback)">animateCamera</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update, <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a> callback)</nobr>
+        
+        <div class="jd-descrdiv">Animates the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination over a
+ default duration with an optional completion callback.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#animateCamera(com.amazon.geo.mapsv2.CameraUpdate, int, com.amazon.geo.mapsv2.AmazonMap.CancelableCallback)">animateCamera</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update, int durationMs, <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a> callback)</nobr>
+        
+        <div class="jd-descrdiv">Animates the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination over a
+ specified duration, with an optional completion callback.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#animateCamera(com.amazon.geo.mapsv2.CameraUpdate)">animateCamera</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update)</nobr>
+        
+        <div class="jd-descrdiv">Animates the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination over a
+ default duration.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#clear()">clear</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Removes all added objects from the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getCameraPosition()">getCameraPosition</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></code> representing a snapshot of the current position
+ of the map camera.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/model/IndoorBuilding.html">IndoorBuilding</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getFocusedBuilding()">getFocusedBuilding</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the focused building with indoor maps.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getMapType()">getMapType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the currently displayed map type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getMaxZoomLevel()">getMaxZoomLevel</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the maximum zoom level for the camera at the current position.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getMinZoomLevel()">getMinZoomLevel</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the minimum zoom level for the camera at the current position.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/android/location/Location.html">Location</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getMyLocation()">getMyLocation</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">
+      <em>This method is deprecated. 
+      Use standard Android location APIs instead. See the <a href=
+             "http://developer.android.com/guide/topics/location/strategies.html"
+             >Location Strategies</a> API guide for details.
+</em></div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getProjection()">getProjection</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a></code> object that can be used to convert between
+ latitude/longitude and screen coordinates.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#getUiSettings()">getUiSettings</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a></code> object representing the user interface settings
+ currently in use.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#isBuildingsEnabled()">isBuildingsEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value that specifies whether buildings are enabled.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#isIndoorEnabled()">isIndoorEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value that specifies whether indoor maps are currently enabled.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#isMyLocationEnabled()">isMyLocationEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value that specifies whether the "My Location" layer
+ is currently enabled.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#isTrafficEnabled()">isTrafficEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a boolean value that specifies whether the traffic layer is
+ currently enabled.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#moveCamera(com.amazon.geo.mapsv2.CameraUpdate)">moveCamera</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update)</nobr>
+        
+        <div class="jd-descrdiv">Immediately moves the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setBuildingsEnabled(boolean)">setBuildingsEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets whether 3D buildings are displayed on the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setIndoorEnabled(boolean)">setIndoorEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Sets whether indoor maps are displayed.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setInfoWindowAdapter(com.amazon.geo.mapsv2.AmazonMap.InfoWindowAdapter)">setInfoWindowAdapter</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a> adapter)</nobr>
+        
+        <div class="jd-descrdiv">Sets a custom adapter for displaying <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> info
+ windows.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setLocationSource(com.amazon.geo.mapsv2.LocationSource)">setLocationSource</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.html">LocationSource</a> source)</nobr>
+        
+        <div class="jd-descrdiv">Sets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.html">LocationSource</a></code> for the "My Location" layer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setMapType(int)">setMapType</a></span>(int type)</nobr>
+        
+        <div class="jd-descrdiv">Sets the map type to display.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setMyLocationEnabled(boolean)">setMyLocationEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Enable or disable the "My Location" layer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnCameraChangeListener(com.amazon.geo.mapsv2.AmazonMap.OnCameraChangeListener)">setOnCameraChangeListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnCameraChangeListener.html">AmazonMap.OnCameraChangeListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks when the map camera changes position.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnIndoorStateChangeListener(com.amazon.geo.mapsv2.AmazonMap.OnIndoorStateChangeListener)">setOnIndoorStateChangeListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnIndoorStateChangeListener.html">AmazonMap.OnIndoorStateChangeListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks for indoor maps state changes.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnInfoWindowClickListener(com.amazon.geo.mapsv2.AmazonMap.OnInfoWindowClickListener)">setOnInfoWindowClickListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnInfoWindowClickListener.html">AmazonMap.OnInfoWindowClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks when the user clicks on a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>'s
+ info window.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMapClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMapClickListener)">setOnMapClickListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapClickListener.html">AmazonMap.OnMapClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks when the user clicks on the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMapLoadedCallback(com.amazon.geo.mapsv2.AmazonMap.OnMapLoadedCallback)">setOnMapLoadedCallback</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLoadedCallback.html">AmazonMap.OnMapLoadedCallback</a> callback)</nobr>
+        
+        <div class="jd-descrdiv">Sets a callback to receive notifications after all map tiles are
+ fetched and rendered.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMapLongClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMapLongClickListener)">setOnMapLongClickListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLongClickListener.html">AmazonMap.OnMapLongClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks when the user performs a long click
+ on the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMarkerClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMarkerClickListener)">setOnMarkerClickListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerClickListener.html">AmazonMap.OnMarkerClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks when the user clicks on a
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMarkerDragListener(com.amazon.geo.mapsv2.AmazonMap.OnMarkerDragListener)">setOnMarkerDragListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerDragListener.html">AmazonMap.OnMarkerDragListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks when a marker is dragged.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMyLocationButtonClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMyLocationButtonClickListener)">setOnMyLocationButtonClickListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationButtonClickListener.html">AmazonMap.OnMyLocationButtonClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener to receive callbacks when the user clicks the "Locate Me"
+ button.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setOnMyLocationChangeListener(com.amazon.geo.mapsv2.AmazonMap.OnMyLocationChangeListener)">setOnMyLocationChangeListener</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationChangeListener.html">AmazonMap.OnMyLocationChangeListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">
+      <em>This method is deprecated. 
+      Use standard Android location APIs instead. See the <a href=
+             "http://developer.android.com/guide/topics/location/strategies.html"
+             >Location Strategies</a> API guide for details.
+</em></div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setPadding(int, int, int, int)">setPadding</a></span>(int left, int top, int right, int bottom)</nobr>
+        
+        <div class="jd-descrdiv">Sets the number of pixels to offset all map controls, indicators, attribution
+ text, and any other fixed views in from the edge of the map fragment or
+ map view's bounding box.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#setTrafficEnabled(boolean)">setTrafficEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Enables or disables the traffic layer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#snapshot(com.amazon.geo.mapsv2.AmazonMap.SnapshotReadyCallback)">snapshot</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a> callback)</nobr>
+        
+        <div class="jd-descrdiv">Takes a snapshot of the map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#snapshot(com.amazon.geo.mapsv2.AmazonMap.SnapshotReadyCallback, android.graphics.Bitmap)">snapshot</a></span>(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a> callback, <a href="http://developer.android.com/reference/android/graphics/Bitmap.html">Bitmap</a> bitmap)</nobr>
+        
+        <div class="jd-descrdiv">Takes a snapshot of the map and returns it in a pre-allocated
+ <code>Bitmap</code> passed to the method.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#stopAnimation()">stopAnimation</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Stops any active map camera animation.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="MAP_TYPE_HYBRID"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        MAP_TYPE_HYBRID
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Display satellite tiles with labels and translucent road overlays.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                4
+                (0x00000004)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="MAP_TYPE_NONE"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        MAP_TYPE_NONE
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Display no map tiles.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                0
+                (0x00000000)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="MAP_TYPE_NORMAL"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        MAP_TYPE_NORMAL
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Display base map tiles.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                1
+                (0x00000001)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="MAP_TYPE_SATELLITE"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        MAP_TYPE_SATELLITE
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Display satellite tiles with no roads or labels.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                2
+                (0x00000002)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="MAP_TYPE_TERRAIN"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        MAP_TYPE_TERRAIN
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Display terrain tiles with labels and white road overlays.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                3
+                (0x00000003)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="addCircle(com.amazon.geo.mapsv2.model.CircleOptions)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a>
+      </span>
+      <span class="sympad">addCircle</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a> options)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></code> to the map. See <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></code> and
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a></code> for details on creating a valid circle and the
+ available properties.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>options</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html">CircleOptions</a></code> object that defines how to draw
+            the circle. Must not be <code>null</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Circle.html">Circle</a></code> that was added to the map.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html#getRadius()">getRadius()</a></code> or
+             <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CircleOptions.html#getStrokeWidth()">getStrokeWidth()</a></code> is negative.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addGroundOverlay(com.amazon.geo.mapsv2.model.GroundOverlayOptions)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a>
+      </span>
+      <span class="sympad">addGroundOverlay</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlayOptions.html">GroundOverlayOptions</a> options)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>This is not yet implemented and will throw an
+ UnsupportedOperationException when called.
+ <p>
+ Adds a ground overlay with the specified options. If the options are not
+ well-formed, this method will throw an IllegalStateException.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>options</th>
+          <td>The options specified to draw the ground overlay</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/GroundOverlay.html">GroundOverlay</a></code> that was added to the map
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addMarker(com.amazon.geo.mapsv2.model.MarkerOptions)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a>
+      </span>
+      <span class="sympad">addMarker</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a> options)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a marker to the map. The marker icon is rendered at the coordinates defined
+ in the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/LatLng.html">LatLng</a></code> provided in <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html#position(com.amazon.geo.mapsv2.model.LatLng)">position(LatLng)</a></code>.
+ <p>
+ By default, clicking the marker moves the camera to the
+ marker's position. If <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html#title(java.lang.String)">title(String)</a></code> is defined, then an info window with the
+ title is shown.
+ <p>
+ See <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> and <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></code> for details
+ on creating a valid marker and the available properties.
+ <p>
+ Note that flat and draggable markers are not currently supported. All markers
+ are added to the map as non-flat, non-draggable markers, regardless of the
+ flat and draggable settings.
+ <p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>options</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/MarkerOptions.html">MarkerOptions</a></code> object that defines how to draw
+            the marker. Must not be <code>null</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> that was added to the map.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addPolygon(com.amazon.geo.mapsv2.model.PolygonOptions)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a>
+      </span>
+      <span class="sympad">addPolygon</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a> options)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></code> to the map. See <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></code> and
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></code> for details on creating a valid polygon and the
+ available properties.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>options</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html">PolygonOptions</a></code> object that defines how to draw
+            the polygon. Must not be <code>null</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polygon.html">Polygon</a></code> that was added to the map.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if
+             <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolygonOptions.html#getStrokeWidth()">getStrokeWidth()</a></code> is negative.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addPolyline(com.amazon.geo.mapsv2.model.PolylineOptions)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a>
+      </span>
+      <span class="sympad">addPolyline</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a> options)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></code> to the map. See <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></code> and
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a></code> for details on creating a valid polyline and the
+ available properties.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>options</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html">PolylineOptions</a></code> object that defines how to draw
+            the Polyline. Must not be <code>null</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Polyline.html">Polyline</a></code> that was added to the map.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/PolylineOptions.html#getWidth()">getWidth()</a></code> is
+             negative.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addTileOverlay(com.amazon.geo.mapsv2.model.TileOverlayOptions)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a>
+      </span>
+      <span class="sympad">addTileOverlay</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a> options)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> to the map. See <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> for
+ details on creating a valid tile overlay and the available properties.
+ <p>
+ Unlike other overlays, tile overlays are not automatically restored when
+ the map is recreated and must be re-added manually.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>options</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlayOptions.html">TileOverlayOptions</a></code> object that defines how to
+            draw the tile overlay. Must not be <code>null</code>.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileOverlay.html">TileOverlay</a></code> that was added to the map.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/TileProvider.html">TileProvider</a></code> has not been
+             set in the options.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="animateCamera(com.amazon.geo.mapsv2.CameraUpdate, com.amazon.geo.mapsv2.AmazonMap.CancelableCallback)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">animateCamera</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update, <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a> callback)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Animates the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination over a
+ default duration with an optional completion callback. The <code>CameraUpdate</code>
+ can set any or all of the camera properties (target, zoom level, bearing, and tilt).
+ <p>
+ Use the methods in <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdateFactory.html">CameraUpdateFactory</a></code> to create the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>update</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> object that defines the new
+            camera properties to apply.</td>
+        </tr>
+        <tr>
+          <th>callback</th>
+          <td>Optional callback to receive notification of the
+            animation's completion on the main thread. The callback will
+            receive <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html#onFinish()">onFinish()</a></code> if
+            the animation completes successfully. If the animation is
+            interrupted by further camera movements or user interaction,
+            <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html#onCancel()">onCancel()</a></code> will be
+            called.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></td>
+            <td>if called off of the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="animateCamera(com.amazon.geo.mapsv2.CameraUpdate, int, com.amazon.geo.mapsv2.AmazonMap.CancelableCallback)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">animateCamera</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update, int durationMs, <a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html">AmazonMap.CancelableCallback</a> callback)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Animates the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination over a
+ specified duration, with an optional completion callback. The <code>CameraUpdate</code>
+ can set any or all of the camera properties (target, zoom level, bearing, and tilt).
+ <p>
+ Use the methods in <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdateFactory.html">CameraUpdateFactory</a></code> to create the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>update</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> object that defines the new
+            camera properties to apply.</td>
+        </tr>
+        <tr>
+          <th>durationMs</th>
+          <td>Duration of the animation in milliseconds. Must be
+            positive.</td>
+        </tr>
+        <tr>
+          <th>callback</th>
+          <td>Optional callback to receive notification of the
+            animation's completion on the main thread. The callback will
+            receive <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html#onFinish()">onFinish()</a></code> if
+            the animation completes successfully. If the animation is
+            interrupted by further camera movements or user interaction,
+            <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.CancelableCallback.html#onCancel()">onCancel()</a></code> will be
+            called.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></td>
+            <td>if durationMs is not positive.</td>
+        </tr>  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></td>
+            <td>if called off of the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="animateCamera(com.amazon.geo.mapsv2.CameraUpdate)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">animateCamera</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Animates the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination over a
+ default duration. The <code>CameraUpdate</code> can set any or all of the
+ camera properties (target, zoom level, bearing, and tilt).
+ <p>
+ Use the methods in <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdateFactory.html">CameraUpdateFactory</a></code> to create the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>update</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> object that defines the new
+            camera properties to apply.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></td>
+            <td>if called off of the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="clear()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">clear</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Removes all added objects from the map.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getCameraPosition()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a>
+      </span>
+      <span class="sympad">getCameraPosition</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></code> representing a snapshot of the current position
+ of the map camera.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/CameraPosition.html">CameraPosition</a></code> object representing the current position
+         of the map camera.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFocusedBuilding()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/model/IndoorBuilding.html">IndoorBuilding</a>
+      </span>
+      <span class="sympad">getFocusedBuilding</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the focused building with indoor maps.
+ <p>
+ This functionality is not currently supported.
+ </p>
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getMapType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        int
+      </span>
+      <span class="sympad">getMapType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the currently displayed map type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The map type (<code>MAP_TYPE_NONE</code>, <code>MAP_TYPE_NORMAL</code>,
+ <code>MAP_TYPE_HYBRID</code>, <code>MAP_TYPE_TERRAIN</code>, or <code>MAP_TYPE_SATELLITE</code>).
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMaxZoomLevel()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        float
+      </span>
+      <span class="sympad">getMaxZoomLevel</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the maximum zoom level for the camera at the current position.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The maximum zoom level.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMinZoomLevel()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        float
+      </span>
+      <span class="sympad">getMinZoomLevel</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the minimum zoom level for the camera at the current position.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The minimum zoom level.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMyLocation()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="http://developer.android.com/reference/android/location/Location.html">Location</a>
+      </span>
+      <span class="sympad">getMyLocation</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      <p>
+  <p class="caution">
+      <strong>This method is deprecated</strong>.<br/>  Use standard Android location APIs instead. See the <a href=
+             "http://developer.android.com/guide/topics/location/strategies.html"
+             >Location Strategies</a> API guide for details.
+
+  </p>
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the current position of the "My Location" indicator.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The "My Location" indicator's current location.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getProjection()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a>
+      </span>
+      <span class="sympad">getProjection</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a></code> object that can be used to convert between
+ latitude/longitude and screen coordinates.
+ <p>
+ The returned <code>Projection</code> is a snapshot of the projection, representing
+ where the camera was when this method was called. Note that Amazon Maps
+ uses a Mercator (EPSG:3857) projection.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/Projection.html">Projection</a></code> object representing a snapshot of the projection.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getUiSettings()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        <a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a>
+      </span>
+      <span class="sympad">getUiSettings</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a></code> object representing the user interface settings
+ currently in use. The returned <code>UiSettings</code> object can be used change
+ map UI settings.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html">UiSettings</a></code> currently in use.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isBuildingsEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isBuildingsEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value that specifies whether buildings are enabled.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if buildings are enabled, <code>false</code> otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isIndoorEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isIndoorEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value that specifies whether indoor maps are currently enabled.
+ <p>
+ Note that indoor buildings are not currently supported in the Amazon Maps API, so
+ this always returns <code>false</code>.
+ </p>
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="isMyLocationEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isMyLocationEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value that specifies whether the "My Location" layer
+ is currently enabled.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the "My Location" layer is enabled, <code>false</code>
+         otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isTrafficEnabled()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isTrafficEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a boolean value that specifies whether the traffic layer is
+ currently enabled. This depends on the availability of traffic data at
+ the current location.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the traffic layer is enabled and <code>false</code> otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="moveCamera(com.amazon.geo.mapsv2.CameraUpdate)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">moveCamera</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a> update)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Immediately moves the map camera to the specified <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> destination.
+ The <code>CameraUpdate</code> can set any or all of the camera properties
+ (target, zoom level, bearing, and tilt).
+ <p>
+ Any active camera animation will be canceled.
+ <p>
+ Use the methods in <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdateFactory.html">CameraUpdateFactory</a></code> to create the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>update</th>
+          <td>A <code><a href="../../../../../reference/com/amazon/geo/mapsv2/CameraUpdate.html">CameraUpdate</a></code> object that defines the new
+            camera properties to apply.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/IllegalStateException.html">IllegalStateException</a></td>
+            <td>if not called on the main thread.</td>
+        </tr>  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/NullPointerException.html">NullPointerException</a></td>
+            <td>if update is <code>null</code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setBuildingsEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setBuildingsEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets whether 3D buildings are displayed on the map.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to turn 3D buildings on, or <code>false</code> to
+            turn them off.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setIndoorEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        boolean
+      </span>
+      <span class="sympad">setIndoorEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets whether indoor maps are displayed.
+ <p>
+ Note that indoor buildings are not currently supported in the Amazon Maps API, so
+ this returns false.
+ </p>
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setInfoWindowAdapter(com.amazon.geo.mapsv2.AmazonMap.InfoWindowAdapter)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setInfoWindowAdapter</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a> adapter)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a custom adapter for displaying <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code> info
+ windows. An info window is displayed above a marker when the marker
+ is clicked. If no adapter is set, the map uses the default info window,
+ which displays the marker's title and optional snippet.
+
+ <p>Implement the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.InfoWindowAdapter.html">AmazonMap.InfoWindowAdapter</a></code> interface to customize the
+ marker info windows. You can customize the entire window or just the
+ contents of the window.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>adapter</th>
+          <td>The adapter to use for rendering marker info
+            windows. Pass <code>null</code> to clear the adapter and use the
+            default info window.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setLocationSource(com.amazon.geo.mapsv2.LocationSource)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setLocationSource</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.html">LocationSource</a> source)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/LocationSource.html">LocationSource</a></code> for the "My Location" layer. This replaces
+ the map's built-in location provider with the specified <code>LocationSource</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>source</th>
+          <td>The location source to set. Pass <code>null</code> to
+            use the default location source.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMapType(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setMapType</span>
+      <span class="normal">(int type)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the map type to display. Supported values are:
+ <p>
+ <ul>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_NONE">MAP_TYPE_NONE</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_NORMAL">MAP_TYPE_NORMAL</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_HYBRID">MAP_TYPE_HYBRID</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_TERRAIN">MAP_TYPE_TERRAIN</a></code>
+ <li><code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_SATELLITE">MAP_TYPE_SATELLITE</a></code>
+ </ul>
+ <p>
+ The default type is <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.html#MAP_TYPE_NORMAL">MAP_TYPE_NORMAL</a></code>.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>type</th>
+          <td>The map type to display.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMyLocationEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setMyLocationEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Enable or disable the "My Location" layer. When enabled, the user's
+ location is displayed on the screen and the "Locate Me" button is
+ shown if enabled. The "Locate Me" button can be enabled or disabled
+ by calling <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#setMyLocationButtonEnabled(boolean)">setMyLocationButtonEnabled(boolean)</a></code>.
+
+ <p>When <code>setMyLocationEnabled</code> is disabled, these UI elements
+ are not shown.</p>
+
+ <p>Note: Your app must request location permissions to use the "My
+ Location" layer:</p>
+ <ul>
+ <li><code>android.permission.ACCESS_COARSE_LOCATION</code>
+ <li><code>android.permission.ACCESS_FINE_LOCATION</code>
+ </ul>
+
+ <p>These permissions are only needed if you call <code>setMyLocationEnabled()</code>
+ and pass <code>true</code>.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable the "My Location" layer, or
+            <code>false</code> to disable it.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnCameraChangeListener(com.amazon.geo.mapsv2.AmazonMap.OnCameraChangeListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnCameraChangeListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnCameraChangeListener.html">AmazonMap.OnCameraChangeListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when the map camera changes position.
+ Setting a new listener clears any previously-set listener.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks when the camera
+          changes position. Set to <code>null</code> to clear the listener.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnIndoorStateChangeListener(com.amazon.geo.mapsv2.AmazonMap.OnIndoorStateChangeListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnIndoorStateChangeListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnIndoorStateChangeListener.html">AmazonMap.OnIndoorStateChangeListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks for indoor maps state changes.
+ <p>
+ Note that indoor buildings are not supported in the Amazon Maps API, so
+ this listener is never called.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks for indoor map state
+ changes. Set to <code>null</code> to clear the listener. Since indoor maps
+ are not currently supported, this listener is never called.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnInfoWindowClickListener(com.amazon.geo.mapsv2.AmazonMap.OnInfoWindowClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnInfoWindowClickListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnInfoWindowClickListener.html">AmazonMap.OnInfoWindowClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when the user clicks on a <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>'s
+ info window. Setting a new listener clears any previously-set listener. If
+ no listener is set, clicking a marker's info window briefly highlights the
+ window.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks for info window
+            clicks. Set to <code>null</code> to clear the listener.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnMapClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMapClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnMapClickListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapClickListener.html">AmazonMap.OnMapClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when the user clicks on the map.
+ Setting a listener clears any previously-set listener. If no listener is
+ set, clicking on the map does nothing.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks for map clicks. Set to
+            <code>null</code> to clear the listener.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnMapLoadedCallback(com.amazon.geo.mapsv2.AmazonMap.OnMapLoadedCallback)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnMapLoadedCallback</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLoadedCallback.html">AmazonMap.OnMapLoadedCallback</a> callback)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a callback to receive notifications after all map tiles are
+ fetched and rendered.
+
+ <p>If the map is already rendered when
+ <code>setOnMapLoadedCallback()</code> is called, the callback is
+ invoked immediately.</p>
+
+ <p>Note that the callback does not fire if:
+ <ul>
+ <li>The map cannot load due to connectivity
+ <li>The map keeps changing due to animations or user interactions.
+ </ul>
+ </p>
+
+ <p>Setting a callback clears any previously-set callback.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>callback</th>
+          <td>The callback to invoke after the map is rendered.
+          Set to <code>null</code> to clear the callback.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnMapLongClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMapLongClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnMapLongClickListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMapLongClickListener.html">AmazonMap.OnMapLongClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when the user performs a long click
+ on the map. Setting a new listener clears any previously-set listener.
+ If no listener is set, performing a long-click on the map does nothing.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks for long map clicks.
+          Set to <code>null</code> to clear the listener.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnMarkerClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMarkerClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnMarkerClickListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerClickListener.html">AmazonMap.OnMarkerClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when the user clicks on a
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html">Marker</a></code>. Setting a new listener clears any previously-set
+ listener. If no listener is set, clicking a marker does the following
+ default behavior:
+ <ul>
+ <li>Centers the map camera on the marker.
+ <li>Displays an info window for the marker if the marker has a title
+ defined. See <code><a href="../../../../../reference/com/amazon/geo/mapsv2/model/Marker.html#setTitle(java.lang.String)">setTitle(String)</a></code>.
+ <li>Displays the Map Toolbar with buttons to open the Amazon Maps app if
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/UiSettings.html#isMapToolbarEnabled()">isMapToolbarEnabled()</a></code> is <code>true</code>.
+ </ul>
+ <p>
+ The listener can return <code>true</code> to block the default behavior or
+ <code>false</code> to allow the default behavior.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks for marker clicks. Set
+            to <code>null</code> to clear the listener and use the default
+            behavior instead.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnMarkerDragListener(com.amazon.geo.mapsv2.AmazonMap.OnMarkerDragListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnMarkerDragListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMarkerDragListener.html">AmazonMap.OnMarkerDragListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when a marker is dragged.
+ Setting a new listener clears any previously-set listener.
+
+ <p>
+ Note that draggable markers are not currently supported in the Amazon Maps API, so
+ this listener is never called.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks when markers are dragged. Set to
+            <code>null</code> to clear the listener. Since draggable markers are
+            not currently supported, this listener is never called.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnMyLocationButtonClickListener(com.amazon.geo.mapsv2.AmazonMap.OnMyLocationButtonClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnMyLocationButtonClickListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationButtonClickListener.html">AmazonMap.OnMyLocationButtonClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when the user clicks the "Locate Me"
+ button. Setting a new listener clears any previously-set listener.
+ If no listener is set, clicking the button triggers the default
+ behavior of animating the map camera to the user's current
+ location and zooming in.
+
+ <p>The listener can return <code>true</code> to block the default
+ behavior or <code>false</code> to allow the default behavior.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks when the "Locate Me"
+            button is clicked. Set to <code>null</code> to clear the listener.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnMyLocationChangeListener(com.amazon.geo.mapsv2.AmazonMap.OnMyLocationChangeListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnMyLocationChangeListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.OnMyLocationChangeListener.html">AmazonMap.OnMyLocationChangeListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      <p>
+  <p class="caution">
+      <strong>This method is deprecated</strong>.<br/>  Use standard Android location APIs instead. See the <a href=
+             "http://developer.android.com/guide/topics/location/strategies.html"
+             >Location Strategies</a> API guide for details.
+
+  </p>
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener to receive callbacks when the user's location changes.
+ Setting a new listener clears any previously-set listener.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</th>
+          <td>The listener to receive callbacks. Set to
+            <code>null</code> to clear the listener.</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPadding(int, int, int, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setPadding</span>
+      <span class="normal">(int left, int top, int right, int bottom)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the number of pixels to offset all map controls, indicators, attribution
+ text, and any other fixed views in from the edge of the map fragment or
+ map view's bounding box. All camera movements are also relative to the center
+ of the padded area.
+
+ By default these views are positioned in by a predetermined amount
+ so supplying a padding value is not required.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>left</th>
+          <td>Padding in pixels from the left of the map.</td>
+        </tr>
+        <tr>
+          <th>top</th>
+          <td>Padding in pixels from the top of the map.</td>
+        </tr>
+        <tr>
+          <th>right</th>
+          <td>Padding in pixels from the right of the map.</td>
+        </tr>
+        <tr>
+          <th>bottom</th>
+          <td>Padding in pixels from the bottom of the map.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTrafficEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">setTrafficEnabled</span>
+      <span class="normal">(boolean enabled)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Enables or disables the traffic layer.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enabled</th>
+          <td><code>true</code> to enable the traffic layer, or <code>false</code> to disable it.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="snapshot(com.amazon.geo.mapsv2.AmazonMap.SnapshotReadyCallback)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">snapshot</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a> callback)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Takes a snapshot of the map.
+
+ You can retrieve the snapshot taken from the
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html#onSnapshotReady(android.graphics.Bitmap)">onSnapshotReady(Bitmap)</a></code> method, which is
+ called when the snapshot is available.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>callback</th>
+          <td>The callback to receive notification when the snapshot is
+            available. The bitmap provided to the callback may be null if
+            the snapshot failed.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="snapshot(com.amazon.geo.mapsv2.AmazonMap.SnapshotReadyCallback, android.graphics.Bitmap)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">snapshot</span>
+      <span class="normal">(<a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html">AmazonMap.SnapshotReadyCallback</a> callback, <a href="http://developer.android.com/reference/android/graphics/Bitmap.html">Bitmap</a> bitmap)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Takes a snapshot of the map and returns it in a pre-allocated
+ <code>Bitmap</code> passed to the method. You can also retrieve the
+ snapshot from the <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html#onSnapshotReady(android.graphics.Bitmap)">onSnapshotReady(Bitmap)</a></code>
+ method, which is called when the snapshot is available.
+
+ <p>If the snapshot is successful and the <code>Bitmap</code> you pass to this
+ method has the same dimensions as the map, then the <code>Bitmap</code>
+ passed to this method and the <code>Bitmap</code> available from
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html#onSnapshotReady(android.graphics.Bitmap)">onSnapshotReady(Bitmap)</a></code> will be identical.</p>
+
+ <p>If the snapshot fails, or if the <code>Bitmap</code> you pass to this method
+ does not have the same dimensions as the map, then the <code>Bitmap</code>
+ passed to this method and the <code>Bitmap</code> available from
+ <code><a href="../../../../../reference/com/amazon/geo/mapsv2/AmazonMap.SnapshotReadyCallback.html#onSnapshotReady(android.graphics.Bitmap)">onSnapshotReady(Bitmap)</a></code> will be different.</p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>callback</th>
+          <td>The callback to receive notification when the snapshot is
+            available.</td>
+        </tr>
+        <tr>
+          <th>bitmap</th>
+          <td>An optional preallocated <code>Bitmap</code> to populate with the
+            snapshot. This <code>Bitmap</code> is not used if the dimensions do
+            not match the map. The <code>Bitmap</code> provided to the callback may be
+            a different object and can be <code>null</code> if the snapshot failed.
+
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="stopAnimation()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+         
+        void
+      </span>
+      <span class="sympad">stopAnimation</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Stops any active map camera animation.
+</p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

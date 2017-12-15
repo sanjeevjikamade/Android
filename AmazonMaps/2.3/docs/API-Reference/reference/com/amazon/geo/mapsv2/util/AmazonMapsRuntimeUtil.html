@@ -1,0 +1,1737 @@
+<!--
+class.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+<!DOCTYPE html>
+<!--
+macros.cs
+
+Copyright (c) 2013-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Use is subject to license terms.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  AmazonMapsRuntimeUtil - Amazon Maps v2 |
+
+Doclava
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+      
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="Search API Reference" name="q"
+                      value="Search API Reference"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <!-- <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td> -->
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/package-summary.html">com.amazon.geo.mapsv2</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/model/package-summary.html">com.amazon.geo.mapsv2.model</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/amazon/geo/mapsv2/util/package-summary.html">com.amazon.geo.mapsv2.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html">AmazonMapsRuntimeUtil</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ErrorDialogFragment.html">ErrorDialogFragment</a></li>
+      </ul>
+    </li>
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+  <a href="#constants">Constants</a>
+  
+
+
+
+
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+    
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">AmazonMapsRuntimeUtil</h1>
+
+
+
+  
+    extends <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.amazon.geo.mapsv2.util.AmazonMapsRuntimeUtil</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p></p>
+<p></p>
+<p itemprop="articleBody">Class providing utility methods for the Amazon Maps API.
+
+</p>
+
+
+
+
+
+  
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#AMAZON_MAPS_RUNTIME_PACKAGE">AMAZON_MAPS_RUNTIME_PACKAGE</a></td>
+        <td class="jd-descrcol" width="100%">Name of the Amazon Maps API package.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#ERROR_DIALOG_TAG">ERROR_DIALOG_TAG</a></td>
+        <td class="jd-descrcol" width="100%">Tag used for error dialog fragments.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><a href="http://developer.android.com/reference/java/lang/String.html">String</a></td>
+        <td class="jd-linkcol"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#TAG">TAG</a></td>
+        <td class="jd-descrcol" width="100%">Tag used when writing messages to the log.</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://developer.android.com/reference/android/app/Dialog.html">Dialog</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#getErrorDialog(int, android.app.Activity, int, android.content.DialogInterface.OnCancelListener)">getErrorDialog</a></span>(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode, <a href="http://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html">DialogInterface.OnCancelListener</a> cancelListener)</nobr>
+        
+        <div class="jd-descrdiv">Creates a dialog for a given error with a cancel listener.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://developer.android.com/reference/android/app/Dialog.html">Dialog</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#getErrorDialog(int, android.app.Activity, int)">getErrorDialog</a></span>(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode)</nobr>
+        
+        <div class="jd-descrdiv">Creates a dialog for a given error.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://developer.android.com/reference/android/app/PendingIntent.html">PendingIntent</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#getErrorPendingIntent(int, android.content.Context, int)">getErrorPendingIntent</a></span>(int errorCode, <a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, int requestCode)</nobr>
+        
+        <div class="jd-descrdiv">Gets an intent to handle a recoverable error such as a required update.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#getErrorString(int)">getErrorString</a></span>(int errorCode)</nobr>
+        
+        <div class="jd-descrdiv">Gets a readable string for a given error code.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#getOpenSourceSoftwareLicenseInfo(android.content.Context)">getOpenSourceSoftwareLicenseInfo</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        
+        <div class="jd-descrdiv">Returns a <code><a href="http://developer.android.com/reference/java/lang/String.html">String</a></code> containing license info for open source software
+ used by the library.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://developer.android.com/reference/android/content/Context.html">Context</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#getRemoteContext(android.content.Context)">getRemoteContext</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> hostContext)</nobr>
+        
+        <div class="jd-descrdiv">Gets the remote context of the Amazon Maps services.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://developer.android.com/reference/android/content/res/Resources.html">Resources</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#getRemoteResource(android.content.Context)">getRemoteResource</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        
+        <div class="jd-descrdiv">Gets the resources of the remote context.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#isAmazonMapsRuntimeAvailable(android.content.Context)">isAmazonMapsRuntimeAvailable</a></span>(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        
+        <div class="jd-descrdiv">Returns an integer code indicating whether the Amazon Maps API library is
+ available on the device.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#isAmazonSignedUid(android.content.pm.PackageManager, int)">isAmazonSignedUid</a></span>(<a href="http://developer.android.com/reference/android/content/pm/PackageManager.html">PackageManager</a> packageManager, int uid)</nobr>
+        
+        <div class="jd-descrdiv">Verifies if the uid belongs to an Amazon signed app.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#isUserRecoverableError(int)">isUserRecoverableError</a></span>(int errorCode)</nobr>
+        
+        <div class="jd-descrdiv">Returns a boolean value indicating whether the specified error is
+ recoverable through user interaction such as installing an update.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#showErrorDialogFragment(int, android.app.Activity, int)">showErrorDialogFragment</a></span>(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode)</nobr>
+        
+        <div class="jd-descrdiv">Shows a dialog fragment for a given error.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#showErrorDialogFragment(int, android.app.Activity, int, android.content.DialogInterface.OnCancelListener)">showErrorDialogFragment</a></span>(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode, <a href="http://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html">DialogInterface.OnCancelListener</a> cancelListener)</nobr>
+        
+        <div class="jd-descrdiv">Shows a dialog fragment for a given error with a cancel listener.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/AmazonMapsRuntimeUtil.html#showErrorNotification(int, android.content.Context)">showErrorNotification</a></span>(int errorCode, <a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        
+        <div class="jd-descrdiv">Shows a notification for a given error.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://developer.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://developer.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://developer.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="AMAZON_MAPS_RUNTIME_PACKAGE"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        AMAZON_MAPS_RUNTIME_PACKAGE
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Name of the Amazon Maps API package.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.amazon.geo.mapsv2.services"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ERROR_DIALOG_TAG"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        ERROR_DIALOG_TAG
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Tag used for error dialog fragments.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "AmazonMapsErrorDialog"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="TAG"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+        TAG
+    </h4>
+      <div class="api-level">
+        
+    
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Tag used when writing messages to the log.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "AmazonMapsV2"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="getErrorDialog(int, android.app.Activity, int, android.content.DialogInterface.OnCancelListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://developer.android.com/reference/android/app/Dialog.html">Dialog</a>
+      </span>
+      <span class="sympad">getErrorDialog</span>
+      <span class="normal">(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode, <a href="http://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html">DialogInterface.OnCancelListener</a> cancelListener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a dialog for a given error with a cancel listener.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.</td>
+        </tr>
+        <tr>
+          <th>activity</th>
+          <td>The parent activity.</td>
+        </tr>
+        <tr>
+          <th>requestCode</th>
+          <td>The request code. Can be 0.</td>
+        </tr>
+        <tr>
+          <th>cancelListener</th>
+          <td>The dialog cancel listener.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The error dialog.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getErrorDialog(int, android.app.Activity, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://developer.android.com/reference/android/app/Dialog.html">Dialog</a>
+      </span>
+      <span class="sympad">getErrorDialog</span>
+      <span class="normal">(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a dialog for a given error.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.</td>
+        </tr>
+        <tr>
+          <th>activity</th>
+          <td>The parent activity.</td>
+        </tr>
+        <tr>
+          <th>requestCode</th>
+          <td>The request code. Can be 0.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The error dialog.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getErrorPendingIntent(int, android.content.Context, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://developer.android.com/reference/android/app/PendingIntent.html">PendingIntent</a>
+      </span>
+      <span class="sympad">getErrorPendingIntent</span>
+      <span class="normal">(int errorCode, <a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context, int requestCode)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets an intent to handle a recoverable error such as a required update.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.</td>
+        </tr>
+        <tr>
+          <th>context</th>
+          <td>The app context.</td>
+        </tr>
+        <tr>
+          <th>requestCode</th>
+          <td>The request code. Can be 0.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getErrorString(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getErrorString</span>
+      <span class="normal">(int errorCode)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a readable string for a given error code.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getOpenSourceSoftwareLicenseInfo(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://developer.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">getOpenSourceSoftwareLicenseInfo</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a <code><a href="http://developer.android.com/reference/java/lang/String.html">String</a></code> containing license info for open source software
+ used by the library.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>The app context.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The license info.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRemoteContext(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://developer.android.com/reference/android/content/Context.html">Context</a>
+      </span>
+      <span class="sympad">getRemoteContext</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> hostContext)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the remote context of the Amazon Maps services.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>hostContext</th>
+          <td>The app context.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The remote context.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRemoteResource(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://developer.android.com/reference/android/content/res/Resources.html">Resources</a>
+      </span>
+      <span class="sympad">getRemoteResource</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the resources of the remote context.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>The app context.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The resources.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isAmazonMapsRuntimeAvailable(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">isAmazonMapsRuntimeAvailable</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Returns an integer code indicating whether the Amazon Maps API library is
+ available on the device. Refer to <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> for possible
+ error values.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</th>
+          <td>The app context.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html#SUCCESS">SUCCESS</a></code> if the Amazon Maps API is
+         available. A non-zero <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> code if the API is
+         not available.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isAmazonSignedUid(android.content.pm.PackageManager, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isAmazonSignedUid</span>
+      <span class="normal">(<a href="http://developer.android.com/reference/android/content/pm/PackageManager.html">PackageManager</a> packageManager, int uid)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Verifies if the uid belongs to an Amazon signed app.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="http://developer.android.com/reference/java/lang/SecurityException.html">SecurityException</a></td>
+            <td>if the uid doesn't belong to an
+             Amazon signed app.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isUserRecoverableError(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isUserRecoverableError</span>
+      <span class="normal">(int errorCode)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a boolean value indicating whether the specified error is
+ recoverable through user interaction such as installing an update.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the specified error is recoverable, {code false}
+         otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="showErrorDialogFragment(int, android.app.Activity, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">showErrorDialogFragment</span>
+      <span class="normal">(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Shows a dialog fragment for a given error.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.</td>
+        </tr>
+        <tr>
+          <th>activity</th>
+          <td>The parent activity.</td>
+        </tr>
+        <tr>
+          <th>requestCode</th>
+          <td>The request code. Can be 0.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the dialog fragment is successfully shown.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="showErrorDialogFragment(int, android.app.Activity, int, android.content.DialogInterface.OnCancelListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">showErrorDialogFragment</span>
+      <span class="normal">(int errorCode, <a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a> activity, int requestCode, <a href="http://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html">DialogInterface.OnCancelListener</a> cancelListener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Shows a dialog fragment for a given error with a cancel listener.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.</td>
+        </tr>
+        <tr>
+          <th>activity</th>
+          <td>The parent activity.</td>
+        </tr>
+        <tr>
+          <th>requestCode</th>
+          <td>The request code. Can be 0.</td>
+        </tr>
+        <tr>
+          <th>cancelListener</th>
+          <td>The dialog cancel listener.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the dialog fragment is successfully shown.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="showErrorNotification(int, android.content.Context)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">showErrorNotification</span>
+      <span class="normal">(int errorCode, <a href="http://developer.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+    
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+   
+  <div class="jd-tagdata jd-tagdescr"><p>Shows a notification for a given error.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>errorCode</th>
+          <td>The <code><a href="../../../../../../reference/com/amazon/geo/mapsv2/util/ConnectionResult.html">ConnectionResult</a></code> error code.</td>
+        </tr>
+        <tr>
+          <th>context</th>
+          <td>The app context.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+<p>
+&copy; 2010-2015, Amazon.com, Inc. or its affiliates. All Rights Reserved. <br>
+Licensed under the Program Materials License Agreement, available at:
+<a href="https://developer.amazon.com/public/support/pml.html" target="_blank">https://developer.amazon.com/public/support/pml.html</a>
+</p>
+</div> <!-- end footer -->
+
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+changeApiLevel(); /* refresh the API visibility */
+</script>
+
+
+</body>
+</html>

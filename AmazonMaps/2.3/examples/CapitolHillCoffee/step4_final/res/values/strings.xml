@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2014 Amazon.com, Inc. or its affiliates. -->
+<!-- All Rights Reserved. -->
+<resources>
+    <string name="app_name">Capitol Hill Coffee</string>
+    <string name="find_me">Find Me</string>
+    <string name="find_coffee">Find Coffee</string>
+    <string name="ok">OK</string>
+</resources>

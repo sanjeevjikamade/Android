@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Interstitial Ad Sample</string>
+    <string name="description">
+        This is a simple app for testing interstitial ad loading capabilities of the Amazon Mobile Ads API. 
+        The active/inactive states of the above buttons indicate which actions are allowed at the current point in the ad\'s lifecycle.
+    </string>
+    <string name="load_button_text">Load Ad</string>
+    <string name="show_button_text">Show Ad</string>
+
+</resources>

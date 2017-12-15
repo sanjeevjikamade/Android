@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2014 Amazon.com, Inc. or its affiliates. -->
+<!-- All Rights Reserved. -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <fragment
+        android:id="@+id/mapfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="com.amazon.geo.mapsv2.MapFragment"/>
+
+    <ImageView
+        android:id="@+id/find_me"
+        android:contentDescription="@string/find_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1px"
+        android:layout_marginTop="1px"
+        android:clickable="true"
+        android:src="@drawable/compass" />
+
+</RelativeLayout>
+
